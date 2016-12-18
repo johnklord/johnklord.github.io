@@ -123,16 +123,19 @@
     }
   }
   @include media(pad){
-    display: flex;
-    flex-direction: row;
+    //display: flex;
+    //flex-direction: row;
     aside{
+      padding-right: $document-margin;
       padding-left: 0;
-      flex: 1;
       min-width: 230px;
       max-width: 230px;
+      float:left;
     }
     main{
-      flex: 3;
+      float:left;
+      padding-left: $document-margin;
+      width: calc( 100% - 230px - 6rem);
     }
   }
 }

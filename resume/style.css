@@ -2839,16 +2839,16 @@ a {
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s; }
   @media (min-width: 768px) {
-    #root {
-      display: flex;
-      flex-direction: row; }
-      #root aside {
-        padding-left: 0;
-        flex: 1;
-        min-width: 230px;
-        max-width: 230px; }
-      #root main {
-        flex: 3; } }
+    #root aside {
+      padding-right: 1rem;
+      padding-left: 0;
+      min-width: 230px;
+      max-width: 230px;
+      float: left; }
+    #root main {
+      float: left;
+      padding-left: 1rem;
+      width: calc( 100% - 230px - 6rem); } }
 
 html.black-and-white body {
   background-color: white;
