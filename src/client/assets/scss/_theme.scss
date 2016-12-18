@@ -1,0 +1,25 @@
+@mixin theme($theme,$primary,$secondary){
+  html.#{$theme}{
+    body{
+      background-color: $secondary;
+      color: $primary;
+      header.dark{
+        color: $secondary;
+        background: $primary;
+      }
+      #root{
+        aside{
+          #line{
+            background: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include theme("black-and-white",black,white);
+@include theme("white-and-black",white,black);
+@include theme("navy-and-lightBrown",$navy,$light-brown);
+@include theme("red-and-lightBrown",$red,$light-brown);
+@include theme("grey-and-lightBrown",$grey,$light-brown);

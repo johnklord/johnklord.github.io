@@ -68,3 +68,15 @@ table{
 section{
   padding: 1rem 0;
 }
+
+a{
+  //&:before{
+    //content: ">";
+  //}
+  color: inherit;
+  text-decoration: none;
+  &:hover{
+    color: blue;
+    text-decoration: underline;
+  }
+}
