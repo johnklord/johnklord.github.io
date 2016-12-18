@@ -13,14 +13,14 @@ gulp.task('dev-server', function(){
 gulp.task('compile-scss', function(){
   return gulp.src("./src/client/assets/scss/style.scss")
     .pipe(gulpSass().on("error",gulpSass.logError))
-    .pipe(gulp.dest('./public'))
+    .pipe(gulp.dest('./resume'))
 })
 
 gulp.task('watch', function(){
   var watchPaths = [
-    path.join(__dirname,'public/**/*.js'),
+    path.join(__dirname,'resume/**/*.js'),
     path.join(__dirname,'src/**/*.scss'),
-    path.join(__dirname,'public/**/*.html')
+    path.join(__dirname,'resume/**/*.html')
   ];
   gulp.watch(watchPaths, ['compile-scss']);
 });

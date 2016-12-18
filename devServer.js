@@ -3,7 +3,7 @@ module.exports = function(){
   var path =require('path');
   var app = express();
 
-  app.use('/', express.static(path.join(__dirname, 'public')))
+  app.use('/', express.static(path.join(__dirname)))
 
   var port = 1337;
   var host = "127.0.0.1";
