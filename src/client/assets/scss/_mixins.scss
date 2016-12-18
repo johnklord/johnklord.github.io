@@ -1,0 +1,266 @@
+@function add($a, $b) {
+  @return $a + $b;
+}
+@function strip-unit($number){
+  @return $number / ($number * 0 + 1);
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin drop-shadow($blur, $color) {
+  text-shadow: -1px -1px #{$blur}px $color, 1px -1px #{$blur}px $color, -1px 1px #{$blur}px $color, 1px 1px #{$blur}px $color;
+}
+
+@mixin box-shadow($h-shadow: 1px, $v-shadow: 1px, $blur: 1px, $spread: 1px, $color: rgba(0, 0, 0, 0.25), $inset: "") {
+  -webkit-box-shadow: #{$h-shadow} #{$v-shadow} #{$blur} #{$spread} #{$color} #{$inset};
+  -moz-box-shadow: #{$h-shadow} #{$v-shadow} #{$blur} #{$spread} #{$color} #{$inset};
+  -ms-box-shadow: #{$h-shadow} #{$v-shadow} #{$blur} #{$spread} #{$color} #{$inset};
+  box-shadow: #{$h-shadow} #{$v-shadow} #{$blur} #{$spread} #{$color} #{$inset};
+}
+
+@mixin box-sizing {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@function legacy-direction($value) {
+  @if is-direction($value) == false {
+    @error "Cannot convert `#{$value}` to legacy syntax because it doesn't seem to be a direction.";
+  }
+  $conversion-map:(to top: bottom,to top right: bottom left,to right top: left bottom,to right: left,to bottom right: top left,to right bottom: left top,to bottom: top,to bottom left: top right,to left bottom: right top,to left: right,to left top: right bottom,to top left: bottom right);
+  @if map-has-key($conversion-map, $value) {
+    @return map-get($conversion-map, $value);
+  }
+  @return 90deg - #{$value};
+}
+
+@function is-direction($value) {
+  $is-keyword: index((to top, to top right, to right top, to right, to bottom right, to right bottom, to bottom, to bottom left, to left bottom, to left, to left top, to top left, bottom, top, left, right), $value);
+  $is-angle: type-of($value) == "number" and index("deg" "grad" "turn" "rad", unit($value));
+  @return $is-keyword or $is-angle;
+}
+
+@mixin linear-gradient($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+@mixin linear-gradient-important($direction, $color-stops...) {
+  @if is-direction($direction) == false {
+    $color-stops: $direction, $color-stops;
+    $direction: 180deg;
+  }
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops) !important;
+  background: linear-gradient($direction, $color-stops) !important;
+}
+
+
+@mixin clearfix-hack {
+  & {
+    zoom: 1;
+  }
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin background-size($args) {
+  -webkit-background-size: $args;
+  -moz-background-size: $args;
+  -o-background-size: $args;
+  background-size: $args;
+}
+
+@mixin pointer {
+  cursor: pointer;
+  cursor: hand;
+}
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin vertical-align-opposite {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(50%);
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+@mixin flip($direction: x) {
+  @if $direction == x {
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+  }
+  @else {
+    -moz-transform: scaleY(-1);
+    -o-transform: scaleY(-1);
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    filter: FlipV;
+    -ms-filter: "FlipV";
+  }
+}
+
+@mixin scale($x:1, $y:1, $z: null){
+  @if ($z){
+    -moz-transform: scale3d($x, $y, $z);
+    -o-transform: scale3d($x, $y, $z);
+    -webkit-transform: scale3d($x, $y, $z);
+    -ms-transform: scale3d($x, $y, $z);
+    transform: scale3d($x, $y, $z);
+  } 
+  @else {
+    -moz-transform: scale($x, $y);
+    -o-transform: scale($x, $y);
+    -webkit-transform: scale($x, $y);
+    -ms-transform: scale($x, $y);
+    transform: scale($x, $y);
+  }
+}
+
+@mixin translate($x, $y, $important: false) {
+  @if $important{
+    -moz-transform: translate($x, $y) !important;
+    -o-transform: translate($x, $y) !important;
+    -webkit-transform: translate($x, $y) !important;
+    -ms-transform: translate($x, $y) !important;
+    transform: translate($x, $y) !important;
+  }
+  @else {
+    -moz-transform: translate($x, $y);
+    -o-transform: translate($x, $y);
+    -webkit-transform: translate($x, $y);
+    -ms-transform: translate($x, $y);
+    transform: translate($x, $y);
+  }
+}
+
+@mixin filter($type, $arg) {
+  filter: $type + unquote("(#{$arg})");
+  -webkit-filter: $type + unquote("(#{$arg})");
+  -moz-filter: $type + unquote("(#{$arg})");
+  -ms-filter: $type + unquote("(#{$arg})");
+  -o-filter: $type + unquote("(#{$arg})");
+}
+
+@mixin animation($name, $duration: 1s, $timing: linear, $delay: 0s, $iteration-count: infinite, $direction: normal, $fill-mode: forwards, $play-state: running) {
+  -webkit-animation: $name $duration $timing $delay $iteration-count $direction $fill-mode $play-state;
+  animation: $name $duration $timing $delay $iteration-count $direction $fill-mode $play-state;
+  -o-animation: $name $duration $timing $delay $iteration-count $direction $fill-mode $play-state;
+  -ms-animation: $name $duration $timing $delay $iteration-count $direction $fill-mode $play-state;
+  -moz-animation: $name $duration $timing $delay $iteration-count $direction $fill-mode $play-state;
+}
+
+@mixin keyframes($animationName){
+  @-webkit-keyframes #{$animationName} {
+    @content;
+  }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-o-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  }
+}
+
+@mixin transition($property: all, $duration: 1s, $timing: linear, $delay: 0s) {
+  -webkit-transition: $property $duration $timing $delay;
+  -moz-transition: $property $duration $timing $delay;
+  -ms-transition: $property $duration $timing $delay;
+  -o-transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
+}
+
+@mixin columns($width, $count) {
+  -webkit-columns: $width $count;
+  -moz-columns: $width $count;
+  columns: $width $count;
+}
+
+@mixin media($name) {
+  @if map-has-key($media-breakpoints, $name) {
+    @media #{inspect(map-get($media-breakpoints, $name))} {
+      @content;
+    }
+  }
+  @else {
+    @warn "no media-breakpoint: `#{$name}`.";
+  }
+}
+
+@mixin skew($deg-x, $deg-y) {
+  -ms-transform: skew($deg-x, $deg-y);
+  -webkit-transform: skew($deg-x, $deg-y);
+  transform: skew($deg-x, $deg-y);
+}
+
+@mixin blow-skew-effect($deg-x, $deg-y, $origin) {
+  -webkit-transform-origin: $origin;
+  -moz-transform-origin: $origin;
+  -o-transform-origin: $origin;
+  transform-origin: $origin;
+  @include animation(blow, 2000ms, ease-in-out);
+  @include keyframes(blow){
+    0% {
+      @include skew(add($deg-x, +9), 0);
+    }
+    50% {
+      @include skew($deg-x, $deg-y);
+    }
+    100% {
+      @include skew(add($deg-x, +9), 0);
+    }
+  }
+}
+
+@mixin spin($duration: 4000ms, $timing: linear, $delay: 0s, $iteration-count: infinite) {
+  -webkit-animation: spin $duration $timing $delay $iteration-count;
+  animation: spin $duration $timing $delay $iteration-count;
+  -o-animation: spin $duration $timing $delay $iteration-count;
+  -ms-animation: spin $duration $timing $delay $iteration-count;
+  -moz-animation: spin $duration $timing $delay $iteration-count;
+
+  @include keyframes(spin){
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+}
+
+@mixin center_on_screen(){
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  @include translate(-50%, -50%, true);
+}

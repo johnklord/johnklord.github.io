@@ -1,0 +1,342 @@
+$opensans-light:"./font/opensans/opensans-light-webfont";
+$opensans-light_italic:"./font/opensans/opensans-lightitalic-webfont";
+$opensans-regular: "./font/opensans/opensans-regular-webfont";  
+$opensans-regular_italic: "./font/opensans/opensans-italic-webfont";  
+$opensans-semibold: "./font/opensans/opensans-semibold-webfont";  
+$opensans-semibold_italic: "./font/opensans/opensans-semibolditalic-webfont";  
+$opensans-bold: "./font/opensans/opensans-bold-webfont";  
+$opensans-bold_italic: "./font/opensans/opensans-bold-webfont";  
+$opensans-extrabold: "./font/opensans/opensans-extrabold-webfont";  
+$opensans-extrabold_italic: "./font/opensans/opensans-extrabolditalic-webfont";  
+
+$raleway-thin:"./font/raleway/Raleway-Thin";
+$raleway-thin_italic:"./font/raleway/Raleway-ThinItalic";
+$raleway-extralight:"./font/raleway/Raleway-ExtraLight";
+$raleway-extralight_italic:"./font/raleway/Raleway-ExtraLightItalic";
+$raleway-light:"./font/raleway/Raleway-Light";
+$raleway-light_italic:"./font/raleway/Raleway-LightItalic";
+$raleway-regular:"./font/raleway/Raleway-Regular";
+$raleway-regular_italic:"./font/raleway/Raleway-Italic";
+$raleway-medium:"./font/raleway/Raleway-Medium";
+$raleway-medium_italic:"./font/raleway/Raleway-MediumItalic";
+$raleway-semibold:"./font/raleway/Raleway-Semibold";
+$raleway-semibold_italic:"./font/raleway/Raleway-SemiboldItalic";
+$raleway-bold:"./font/raleway/Raleway-Bold";
+$raleway-bold_italic:"./font/raleway/Raleway-BoldItalic";
+$raleway-extrabold:"./font/raleway/Raleway-ExtraBold";
+$raleway-extrabold_italic:"./font/raleway/Raleway-ExtraBoldItalic";
+$raleway-black:"./font/raleway/Raleway-Black";
+$raleway-black_italic:"./font/raleway/Raleway-BlackItalic";
+
+$texgyreadventor-regular:"./font/texgyreadventor/texgyreadventor-regular";
+$texgyreadventor-regular_italic:"./font/texgyreadventor/texgyreadventor-italic";
+$texgyreadventor-bold:"./font/texgyreadventor/texgyreadventor-bold";
+$texgyreadventor-bold_italic:"./font/texgyreadventor/texgyreadventor-bolditalic";
+
+@font-face{
+  font-family: Tex Gyre Adventor;
+  src: url("#{$texgyreadventor-regular}.otf");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Tex Gyre Adventor;
+  src: url("#{$texgyreadventor-regular_italic}.otf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: Tex Gyre Adventor;
+  src: url("#{$texgyreadventor-bold}.otf");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Tex Gyre Adventor;
+  src: url("#{$texgyreadventor-bold_italic}.otf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Equal-Sans;
+  src: url(./font/EqualSans.ttf);
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-light}.woff");
+  font-weight: 300;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-light}.woff2");
+  font-weight: 300;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-light}.ttf");
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-light_italic}.woff");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-light_italic}.woff2");
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-light_italic}.ttf");
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-regular}.woff");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-regular}.woff2");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-regular}.ttf");
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-regular_italic}.woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-regular_italic}.woff2");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-regular_italic}.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-semibold}.woff");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-semibold}.woff2");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-semibold}.ttf");
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-semibold_italic}.woff");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-semibold_italic}.woff2");
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-semibold_italic}.ttf");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-bold}.woff");
+  font-weight: 600;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-bold}.woff2");
+  font-weight: 600;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-bold}.ttf");
+  font-weight: 600;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-bold_italic}.woff");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-bold_italic}.woff2");
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-bold_italic}.ttf");
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-extrabold}.woff");
+  font-weight: 700;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-extrabold}.woff2");
+  font-weight: 700;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-extrabold}.ttf");
+  font-weight: 700;
+}
+
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-extrabold_italic}.woff");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-extrabold_italic}.woff2");
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face{
+  font-family: Open Sans;
+  src: url("#{$opensans-extrabold_italic}.ttf");
+  font-weight: 700;
+  font-style: italic;
+}
+
+
+
+
+
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-thin}.ttf");
+  font-weight: 100; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-thin_italic}.ttf");
+  font-weight: 100; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-extralight}.ttf");
+  font-weight: 200; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-extralight_italic}.ttf");
+  font-weight: 200; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-light}.ttf");
+  font-weight: 300; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-light_italic}.ttf");
+  font-weight: 300; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-regular}.ttf");
+  font-weight: 400; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-regular_italic}.ttf");
+  font-weight: 400; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-medium}.ttf");
+  font-weight: 500; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-medium_italic}.ttf");
+  font-weight: 500; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-semibold}.ttf");
+  font-weight: 600; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-semibold_italic}.ttf");
+  font-weight: 600; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-bold}.ttf");
+  font-weight: 700; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-bold_italic}.ttf");
+  font-weight: 700; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-extrabold}.ttf");
+  font-weight: 800; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-extrabold_italic}.ttf");
+  font-weight: 800; 
+  font-style: italic;
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-black}.ttf");
+  font-weight: 900; 
+}
+@font-face{
+  font-family: Raleway;
+  src: url("#{$raleway-black_italic}.ttf");
+  font-weight: 900; 
+  font-style: italic;
+}
+

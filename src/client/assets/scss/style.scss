@@ -1,0 +1,102 @@
+@import "font";
+@import "variables";
+@import "mixins";
+@import "color";
+@import "base";
+@import "util";
+
+#root{
+  margin: 0 auto;
+  max-width: 1024px;
+  display: block;
+  aside{
+    padding-left: calc(100% - 250px);
+    margin: $document-margin;
+    #name{
+      font-weight: bold;
+      font-size: 5rem;
+      height: inherit;
+      text-align: right;
+    }
+    #line{
+      margin-left: -2rem;
+      width: calc(100% + 2rem);
+      background: $primary-color;
+      height: 2.0rem;
+    }
+    #about{
+    }
+    #contact{
+      text-align:right;
+    }
+    #skills{
+      text-align: right;
+    }
+    #language{
+      text-align:right;
+      table{
+        width: auto;
+        margin-right: 0px;
+        margin-left: auto;
+        tbody{
+          tr{
+            td{
+              padding-right: 0;
+              padding-left: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+  main{
+    padding-top: 1rem;
+    @include media(pad){
+      padding-top: 21.6rem;
+    }
+    margin: $document-margin;
+    #education{
+      table.education-header{
+        .school{
+          text-transform: uppercase;
+        }
+        .date{
+          text-align: right;
+        }
+        .major{
+        }
+        .advisor{
+          text-align: right;
+        }
+      }
+    }
+    #experience{
+      table.experience-header{
+        .workplace{
+          text-transform: uppercase;
+        }
+        .date{
+          text-align: right;
+        }
+        .position{
+          font-style: italic;
+        }
+      }
+    }
+  }
+  @include media(pad){
+    display: flex;
+    flex-direction: row;
+    aside{
+      padding-left: 0;
+      flex: 1;
+      min-width: 250px;
+      max-width: 250px;
+    }
+    main{
+      flex: 3;
+    }
+  }
+}
+
+
