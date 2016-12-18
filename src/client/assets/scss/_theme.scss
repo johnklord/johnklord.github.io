@@ -12,6 +12,19 @@
           #line{
             background: $primary;
           }
+          #download{
+            a{
+              &:hover{
+                .btn{
+                  color: $secondary;
+                  background: $primary;
+                }
+              }
+              .btn{
+                border: 1px solid $primary;
+              }
+            }
+          }
         }
       }
     }

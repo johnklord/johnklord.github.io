@@ -1,0 +1,67 @@
+$opensans-light:"./font/opensans/opensans-light-webfont";
+$opensans-light_italic:"./font/opensans/opensans-lightitalic-webfont";
+$opensans-regular: "./font/opensans/opensans-regular-webfont";
+$opensans-regular_italic: "./font/opensans/opensans-italic-webfont";
+$opensans-semibold: "./font/opensans/opensans-semibold-webfont";
+$opensans-semibold_italic: "./font/opensans/opensans-semibolditalic-webfont";
+$opensans-bold: "./font/opensans/opensans-bold-webfont";
+$opensans-bold_italic: "./font/opensans/opensans-bold-webfont";
+$opensans-extrabold: "./font/opensans/opensans-extrabold-webfont";
+$opensans-extrabold_italic: "./font/opensans/opensans-extrabolditalic-webfont";
+$raleway-thin:"./font/raleway/Raleway-Thin";
+$raleway-thin_italic:"./font/raleway/Raleway-ThinItalic";
+$raleway-extralight:"./font/raleway/Raleway-ExtraLight";
+$raleway-extralight_italic:"./font/raleway/Raleway-ExtraLightItalic";
+$raleway-light:"./font/raleway/Raleway-Light";
+$raleway-light_italic:"./font/raleway/Raleway-LightItalic";
+$raleway-regular:"./font/raleway/Raleway-Regular";
+$raleway-regular_italic:"./font/raleway/Raleway-Italic";
+$raleway-medium:"./font/raleway/Raleway-Medium";
+$raleway-medium_italic:"./font/raleway/Raleway-MediumItalic";
+$raleway-semibold:"./font/raleway/Raleway-Semibold";
+$raleway-semibold_italic:"./font/raleway/Raleway-SemiboldItalic";
+$raleway-bold:"./font/raleway/Raleway-Bold";
+$raleway-bold_italic:"./font/raleway/Raleway-BoldItalic";
+$raleway-extrabold:"./font/raleway/Raleway-ExtraBold";
+$raleway-extrabold_italic:"./font/raleway/Raleway-ExtraBoldItalic";
+$raleway-black:"./font/raleway/Raleway-Black";
+$raleway-black_italic:"./font/raleway/Raleway-BlackItalic";
+$texgyreadventor-regular:"./font/texgyreadventor/texgyreadventor-regular";
+$texgyreadventor-regular_italic:"./font/texgyreadventor/texgyreadventor-italic";
+$texgyreadventor-bold:"./font/texgyreadventor/texgyreadventor-bold";
+$texgyreadventor-bold_italic:"./font/texgyreadventor/texgyreadventor-bolditalic";
+$equalsans-regular:"./font/EqualSans";
+
+@import "font";
+@import "variables";
+@import "mixins";
+@import "color";
+@import "base";
+@import "util";
+
+html {
+  body{
+    min-width: 320px;
+    background-color: $light-brown;
+  }
+}
+
+#home{
+  #title{
+    @include center_on_screen();
+    top: 40%;
+    font-family: Equal-Sans,Raleway,Open Sans,Sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    margin-right: -0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .links{
+    @include center_on_screen();
+    top: 60%;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+  }
+}

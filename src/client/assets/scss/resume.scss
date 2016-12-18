@@ -6,7 +6,7 @@
 @import "base";
 @import "util";
 
-#root{
+#resume{
   margin: 0 auto;
   max-width: 1024px;
   display: block;
@@ -31,7 +31,7 @@
       margin-left: -2rem;
       width: calc(100% + 2rem);
       background: $primary-color;
-      height: 2.0rem;
+      height: $line-height;
     }
     #about{
       @extend .animated;
@@ -73,10 +73,30 @@
         }
       }
     }
+    #download{
+      @extend .animated;
+      @extend .fadeInLeft ;
+      animation-delay: 2.0s;
+      -webkit-animation-delay: 2.0s;
+      a{
+        .btn{
+          @include transition($property: all, $duration: 0.2s, $timing: ease-in-out, $delay: 0s);
+          border: 1px solid $primary-color;
+          text-align: center;
+        }
+        &:hover{
+          text-decoration: none;
+          .btn{
+            color: $secondary-color;
+            background: $primary-color;
+          }
+        }
+      }
+    }
   }
   main{
     @include media(pad){
-      padding-top: 22.8rem;
+      padding-top: $main-head-spacing;
     }
     margin: $document-margin;
     #education{

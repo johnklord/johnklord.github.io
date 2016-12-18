@@ -5,51 +5,54 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated, #root aside #name, #root aside #line, #root aside #about, #root aside #contact, #root aside #skills, #root aside #language, #root main #education, #root main #experience, #root main #interests {
+.animated, #resume aside #name, #resume aside #line, #resume aside #about, #resume aside #contact, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #education, #resume main #experience, #resume main #interests {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, #root aside .infinite#name, #root aside .infinite#line, #root aside .infinite#about, #root aside .infinite#contact, #root aside .infinite#skills, #root aside .infinite#language, #root main .infinite#education, #root main .infinite#experience, #root main .infinite#interests {
+.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#about, #resume aside .infinite#contact, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#education, #resume main .infinite#experience, #resume main .infinite#interests {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.hinge, #root aside .hinge#name, #root aside .hinge#line, #root aside .hinge#about, #root aside .hinge#contact, #root aside .hinge#skills, #root aside .hinge#language, #root main .hinge#education, #root main .hinge#experience, #root main .hinge#interests {
+.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#about, #resume aside .hinge#contact, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#education, #resume main .hinge#experience, #resume main .hinge#interests {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.flipOutX, #root aside .flipOutX#name, #root aside .flipOutX#line, #root aside .flipOutX#about, #root aside .flipOutX#contact, #root aside .flipOutX#skills, #root aside .flipOutX#language, #root main .flipOutX#education, #root main .flipOutX#experience, #root main .flipOutX#interests,
+.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#about, #resume aside .flipOutX#contact, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#education, #resume main .flipOutX#experience, #resume main .flipOutX#interests,
 .animated.flipOutY,
-#root aside .flipOutY#name,
-#root aside .flipOutY#line,
-#root aside .flipOutY#about,
-#root aside .flipOutY#contact,
-#root aside .flipOutY#skills,
-#root aside .flipOutY#language,
-#root main .flipOutY#education,
-#root main .flipOutY#experience,
-#root main .flipOutY#interests,
+#resume aside .flipOutY#name,
+#resume aside .flipOutY#line,
+#resume aside .flipOutY#about,
+#resume aside .flipOutY#contact,
+#resume aside .flipOutY#skills,
+#resume aside .flipOutY#language,
+#resume aside .flipOutY#download,
+#resume main .flipOutY#education,
+#resume main .flipOutY#experience,
+#resume main .flipOutY#interests,
 .animated.bounceIn,
-#root aside .bounceIn#name,
-#root aside .bounceIn#line,
-#root aside .bounceIn#about,
-#root aside .bounceIn#contact,
-#root aside .bounceIn#skills,
-#root aside .bounceIn#language,
-#root main .bounceIn#education,
-#root main .bounceIn#experience,
-#root main .bounceIn#interests,
+#resume aside .bounceIn#name,
+#resume aside .bounceIn#line,
+#resume aside .bounceIn#about,
+#resume aside .bounceIn#contact,
+#resume aside .bounceIn#skills,
+#resume aside .bounceIn#language,
+#resume aside .bounceIn#download,
+#resume main .bounceIn#education,
+#resume main .bounceIn#experience,
+#resume main .bounceIn#interests,
 .animated.bounceOut,
-#root aside .bounceOut#name,
-#root aside .bounceOut#line,
-#root aside .bounceOut#about,
-#root aside .bounceOut#contact,
-#root aside .bounceOut#skills,
-#root aside .bounceOut#language,
-#root main .bounceOut#education,
-#root main .bounceOut#experience,
-#root main .bounceOut#interests {
+#resume aside .bounceOut#name,
+#resume aside .bounceOut#line,
+#resume aside .bounceOut#about,
+#resume aside .bounceOut#contact,
+#resume aside .bounceOut#skills,
+#resume aside .bounceOut#language,
+#resume aside .bounceOut#download,
+#resume main .bounceOut#education,
+#resume main .bounceOut#experience,
+#resume main .bounceOut#interests {
   -webkit-animation-duration: .75s;
   animation-duration: .75s; }
 
@@ -921,7 +924,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInLeft, #root aside #name, #root aside #about, #root aside #contact, #root aside #skills, #root aside #language {
+.fadeInLeft, #resume aside #name, #resume aside #about, #resume aside #contact, #resume aside #skills, #resume aside #language, #resume aside #download {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }
 
@@ -1017,7 +1020,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInUp, #root main #education, #root main #experience, #root main #interests {
+.fadeInUp, #resume main #education, #resume main #experience, #resume main #interests {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1275,7 +1278,7 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 
-.animated.flip, #root aside .flip#name, #root aside .flip#line, #root aside .flip#about, #root aside .flip#contact, #root aside .flip#skills, #root aside .flip#language, #root main .flip#education, #root main .flip#experience, #root main .flip#interests {
+.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#about, #resume aside .flip#contact, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#education, #resume main .flip#experience, #resume main .flip#interests {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2399,297 +2402,297 @@
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-.expand, #root aside #line {
+.expand, #resume aside #line {
   -webkit-animation-name: expand;
   animation-name: expand; }
 
 @font-face {
   font-family: Tex Gyre Adventor;
-  src: url("./font/texgyreadventor/texgyreadventor-regular.otf");
+  src: url("../font/texgyreadventor/texgyreadventor-regular.otf");
   font-weight: 400; }
 
 @font-face {
   font-family: Tex Gyre Adventor;
-  src: url("./font/texgyreadventor/texgyreadventor-italic.otf");
+  src: url("../font/texgyreadventor/texgyreadventor-italic.otf");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: Tex Gyre Adventor;
-  src: url("./font/texgyreadventor/texgyreadventor-bold.otf");
+  src: url("../font/texgyreadventor/texgyreadventor-bold.otf");
   font-weight: 500; }
 
 @font-face {
   font-family: Tex Gyre Adventor;
-  src: url("./font/texgyreadventor/texgyreadventor-bolditalic.otf");
+  src: url("../font/texgyreadventor/texgyreadventor-bolditalic.otf");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: Equal-Sans;
-  src: url(./font/EqualSans.ttf); }
+  src: url("../font/EqualSans.ttf"); }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-light-webfont.woff");
+  src: url("../font/opensans/opensans-light-webfont.woff");
   font-weight: 300; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-light-webfont.woff2");
+  src: url("../font/opensans/opensans-light-webfont.woff2");
   font-weight: 300; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-light-webfont.ttf");
+  src: url("../font/opensans/opensans-light-webfont.ttf");
   font-weight: 300; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-lightitalic-webfont.woff");
+  src: url("../font/opensans/opensans-lightitalic-webfont.woff");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-lightitalic-webfont.woff2");
+  src: url("../font/opensans/opensans-lightitalic-webfont.woff2");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-lightitalic-webfont.ttf");
+  src: url("../font/opensans/opensans-lightitalic-webfont.ttf");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-regular-webfont.woff");
+  src: url("../font/opensans/opensans-regular-webfont.woff");
   font-weight: 400; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-regular-webfont.woff2");
+  src: url("../font/opensans/opensans-regular-webfont.woff2");
   font-weight: 400; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-regular-webfont.ttf");
+  src: url("../font/opensans/opensans-regular-webfont.ttf");
   font-weight: 400; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-italic-webfont.woff");
+  src: url("../font/opensans/opensans-italic-webfont.woff");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-italic-webfont.woff2");
+  src: url("../font/opensans/opensans-italic-webfont.woff2");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-italic-webfont.ttf");
+  src: url("../font/opensans/opensans-italic-webfont.ttf");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-semibold-webfont.woff");
+  src: url("../font/opensans/opensans-semibold-webfont.woff");
   font-weight: 500; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-semibold-webfont.woff2");
+  src: url("../font/opensans/opensans-semibold-webfont.woff2");
   font-weight: 500; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-semibold-webfont.ttf");
+  src: url("../font/opensans/opensans-semibold-webfont.ttf");
   font-weight: 500; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-semibolditalic-webfont.woff");
+  src: url("../font/opensans/opensans-semibolditalic-webfont.woff");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-semibolditalic-webfont.woff2");
+  src: url("../font/opensans/opensans-semibolditalic-webfont.woff2");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-semibolditalic-webfont.ttf");
+  src: url("../font/opensans/opensans-semibolditalic-webfont.ttf");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-bold-webfont.woff");
+  src: url("../font/opensans/opensans-bold-webfont.woff");
   font-weight: 600; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-bold-webfont.woff2");
+  src: url("../font/opensans/opensans-bold-webfont.woff2");
   font-weight: 600; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-bold-webfont.ttf");
+  src: url("../font/opensans/opensans-bold-webfont.ttf");
   font-weight: 600; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-bold-webfont.woff");
+  src: url("../font/opensans/opensans-bold-webfont.woff");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-bold-webfont.woff2");
+  src: url("../font/opensans/opensans-bold-webfont.woff2");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-bold-webfont.ttf");
+  src: url("../font/opensans/opensans-bold-webfont.ttf");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-extrabold-webfont.woff");
+  src: url("../font/opensans/opensans-extrabold-webfont.woff");
   font-weight: 700; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-extrabold-webfont.woff2");
+  src: url("../font/opensans/opensans-extrabold-webfont.woff2");
   font-weight: 700; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-extrabold-webfont.ttf");
+  src: url("../font/opensans/opensans-extrabold-webfont.ttf");
   font-weight: 700; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-extrabolditalic-webfont.woff");
+  src: url("../font/opensans/opensans-extrabolditalic-webfont.woff");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-extrabolditalic-webfont.woff2");
+  src: url("../font/opensans/opensans-extrabolditalic-webfont.woff2");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: Open Sans;
-  src: url("./font/opensans/opensans-extrabolditalic-webfont.ttf");
+  src: url("../font/opensans/opensans-extrabolditalic-webfont.ttf");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Thin.ttf");
+  src: url("../font/raleway/Raleway-Thin.ttf");
   font-weight: 100; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-ThinItalic.ttf");
+  src: url("../font/raleway/Raleway-ThinItalic.ttf");
   font-weight: 100;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-ExtraLight.ttf");
+  src: url("../font/raleway/Raleway-ExtraLight.ttf");
   font-weight: 200; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-ExtraLightItalic.ttf");
+  src: url("../font/raleway/Raleway-ExtraLightItalic.ttf");
   font-weight: 200;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Light.ttf");
+  src: url("../font/raleway/Raleway-Light.ttf");
   font-weight: 300; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-LightItalic.ttf");
+  src: url("../font/raleway/Raleway-LightItalic.ttf");
   font-weight: 300;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Regular.ttf");
+  src: url("../font/raleway/Raleway-Regular.ttf");
   font-weight: 400; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Italic.ttf");
+  src: url("../font/raleway/Raleway-Italic.ttf");
   font-weight: 400;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Medium.ttf");
+  src: url("../font/raleway/Raleway-Medium.ttf");
   font-weight: 500; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-MediumItalic.ttf");
+  src: url("../font/raleway/Raleway-MediumItalic.ttf");
   font-weight: 500;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Semibold.ttf");
+  src: url("../font/raleway/Raleway-Semibold.ttf");
   font-weight: 600; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-SemiboldItalic.ttf");
+  src: url("../font/raleway/Raleway-SemiboldItalic.ttf");
   font-weight: 600;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Bold.ttf");
+  src: url("../font/raleway/Raleway-Bold.ttf");
   font-weight: 700; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-BoldItalic.ttf");
+  src: url("../font/raleway/Raleway-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-ExtraBold.ttf");
+  src: url("../font/raleway/Raleway-ExtraBold.ttf");
   font-weight: 800; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-ExtraBoldItalic.ttf");
+  src: url("../font/raleway/Raleway-ExtraBoldItalic.ttf");
   font-weight: 800;
   font-style: italic; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-Black.ttf");
+  src: url("../font/raleway/Raleway-Black.ttf");
   font-weight: 900; }
 
 @font-face {
   font-family: Raleway;
-  src: url("./font/raleway/Raleway-BlackItalic.ttf");
+  src: url("../font/raleway/Raleway-BlackItalic.ttf");
   font-weight: 900;
   font-style: italic; }
 
@@ -2722,11 +2725,11 @@ html {
 header, .section-header {
   font-family: Equal-Sans,Sans-Serif;
   text-transform: uppercase;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
   letter-spacing: 0.3rem;
   margin-right: -0.3rem;
-  height: 2.5rem; }
+  height: 2rem; }
   header.dark, .dark.section-header {
     color: #F2EBD9;
     background: #0D0C2A;
@@ -2769,83 +2772,99 @@ a {
 .spacing {
   height: 2rem; }
 
-#root {
+#resume {
   margin: 0 auto;
   max-width: 1024px;
   display: block; }
-  #root aside {
+  #resume aside {
     padding-left: calc(100% - 250px);
     margin: 1rem; }
-    #root aside #name {
+    #resume aside #name {
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
       font-weight: bold;
       font-size: 5rem;
       height: inherit;
       text-align: right; }
-    #root aside #line {
+    #resume aside #line {
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
       margin-left: -2rem;
       width: calc(100% + 2rem);
       background: #0D0C2A;
-      height: 2.0rem; }
-    #root aside #about {
+      height: 2rem; }
+    #resume aside #about {
       animation-delay: 1.2s;
       -webkit-animation-delay: 1.2s; }
-    #root aside #contact {
+    #resume aside #contact {
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s;
       text-align: right; }
-    #root aside #skills {
+    #resume aside #skills {
       animation-delay: 1.6s;
       -webkit-animation-delay: 1.6s;
       text-align: right; }
-    #root aside #language {
+    #resume aside #language {
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s;
       text-align: right; }
-      #root aside #language table {
+      #resume aside #language table {
         width: auto;
         margin-right: 0px;
         margin-left: auto; }
-        #root aside #language table tbody tr td {
+        #resume aside #language table tbody tr td {
           padding-right: 0;
           padding-left: 1rem; }
-  #root main {
+    #resume aside #download {
+      animation-delay: 2.0s;
+      -webkit-animation-delay: 2.0s; }
+      #resume aside #download a .btn {
+        -webkit-transition: all 0.2s ease-in-out 0s;
+        -moz-transition: all 0.2s ease-in-out 0s;
+        -ms-transition: all 0.2s ease-in-out 0s;
+        -o-transition: all 0.2s ease-in-out 0s;
+        transition: all 0.2s ease-in-out 0s;
+        border: 1px solid #0D0C2A;
+        text-align: center; }
+      #resume aside #download a:hover {
+        text-decoration: none; }
+        #resume aside #download a:hover .btn {
+          color: #F2EBD9;
+          background: #0D0C2A; }
+  #resume main {
     margin: 1rem; }
     @media (min-width: 768px) {
-      #root main {
-        padding-top: 22.8rem; } }
-    #root main #education {
+      #resume main {
+        padding-top: 11rem; } }
+    #resume main #education {
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s; }
-      #root main #education table.education-header .school {
+      #resume main #education table.education-header .school {
         text-transform: uppercase; }
-      #root main #education table.education-header .date {
+      #resume main #education table.education-header .date {
         text-align: right; }
-      #root main #education table.education-header .advisor {
+      #resume main #education table.education-header .advisor {
         text-align: right; }
-    #root main #experience {
+    #resume main #experience {
       animation-delay: 1.6s;
       -webkit-animation-delay: 1.6s; }
-      #root main #experience table.experience-header .workplace {
+      #resume main #experience table.experience-header .workplace {
         text-transform: uppercase; }
-      #root main #experience table.experience-header .date {
+      #resume main #experience table.experience-header .date {
         text-align: right; }
-      #root main #experience table.experience-header .position {
+      #resume main #experience table.experience-header .position {
         font-style: italic; }
-    #root main #interests {
+    #resume main #interests {
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s; }
   @media (min-width: 768px) {
-    #root aside {
+    #resume aside {
       padding-right: 1rem;
       padding-left: 0;
       min-width: 230px;
       max-width: 230px;
       float: left; }
-    #root main {
+    #resume main {
       float: left;
       padding-left: 1rem;
       width: calc( 100% - 230px - 6rem); } }
@@ -2858,6 +2877,11 @@ html.black-and-white body {
     background: black; }
   html.black-and-white body #root aside #line {
     background: black; }
+  html.black-and-white body #root aside #download a:hover .btn {
+    color: white;
+    background: black; }
+  html.black-and-white body #root aside #download a .btn {
+    border: 1px solid black; }
 
 html.white-and-black body {
   background-color: black;
@@ -2867,6 +2891,11 @@ html.white-and-black body {
     background: white; }
   html.white-and-black body #root aside #line {
     background: white; }
+  html.white-and-black body #root aside #download a:hover .btn {
+    color: black;
+    background: white; }
+  html.white-and-black body #root aside #download a .btn {
+    border: 1px solid white; }
 
 html.navy-and-lightBrown body {
   background-color: #F2EBD9;
@@ -2876,6 +2905,11 @@ html.navy-and-lightBrown body {
     background: #0D0C2A; }
   html.navy-and-lightBrown body #root aside #line {
     background: #0D0C2A; }
+  html.navy-and-lightBrown body #root aside #download a:hover .btn {
+    color: #F2EBD9;
+    background: #0D0C2A; }
+  html.navy-and-lightBrown body #root aside #download a .btn {
+    border: 1px solid #0D0C2A; }
 
 html.red-and-lightBrown body {
   background-color: #F2EBD9;
@@ -2885,6 +2919,11 @@ html.red-and-lightBrown body {
     background: #B02C29; }
   html.red-and-lightBrown body #root aside #line {
     background: #B02C29; }
+  html.red-and-lightBrown body #root aside #download a:hover .btn {
+    color: #F2EBD9;
+    background: #B02C29; }
+  html.red-and-lightBrown body #root aside #download a .btn {
+    border: 1px solid #B02C29; }
 
 html.grey-and-lightBrown body {
   background-color: #F2EBD9;
@@ -2894,3 +2933,8 @@ html.grey-and-lightBrown body {
     background: #525A5C; }
   html.grey-and-lightBrown body #root aside #line {
     background: #525A5C; }
+  html.grey-and-lightBrown body #root aside #download a:hover .btn {
+    color: #F2EBD9;
+    background: #525A5C; }
+  html.grey-and-lightBrown body #root aside #download a .btn {
+    border: 1px solid #525A5C; }

@@ -1,0 +1,400 @@
+@font-face {
+  font-family: Tex Gyre Adventor;
+  src: url("./font/texgyreadventor/texgyreadventor-regular.otf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Tex Gyre Adventor;
+  src: url("./font/texgyreadventor/texgyreadventor-italic.otf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Tex Gyre Adventor;
+  src: url("./font/texgyreadventor/texgyreadventor-bold.otf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Tex Gyre Adventor;
+  src: url("./font/texgyreadventor/texgyreadventor-bolditalic.otf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Equal-Sans;
+  src: url("./font/EqualSans.ttf"); }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-light-webfont.woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-light-webfont.woff2");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-light-webfont.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-lightitalic-webfont.woff");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-lightitalic-webfont.woff2");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-lightitalic-webfont.ttf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-regular-webfont.woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-regular-webfont.woff2");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-regular-webfont.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-italic-webfont.woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-italic-webfont.woff2");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-italic-webfont.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-semibold-webfont.woff");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-semibold-webfont.woff2");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-semibold-webfont.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-semibolditalic-webfont.woff");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-semibolditalic-webfont.woff2");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-semibolditalic-webfont.ttf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-bold-webfont.woff");
+  font-weight: 600; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-bold-webfont.woff2");
+  font-weight: 600; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-bold-webfont.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-bold-webfont.woff");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-bold-webfont.woff2");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-bold-webfont.ttf");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-extrabold-webfont.woff");
+  font-weight: 700; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-extrabold-webfont.woff2");
+  font-weight: 700; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-extrabold-webfont.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-extrabolditalic-webfont.woff");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-extrabolditalic-webfont.woff2");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: Open Sans;
+  src: url("./font/opensans/opensans-extrabolditalic-webfont.ttf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Thin.ttf");
+  font-weight: 100; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-ThinItalic.ttf");
+  font-weight: 100;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-ExtraLight.ttf");
+  font-weight: 200; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-ExtraLightItalic.ttf");
+  font-weight: 200;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Light.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-LightItalic.ttf");
+  font-weight: 300;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Italic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Medium.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-MediumItalic.ttf");
+  font-weight: 500;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Semibold.ttf");
+  font-weight: 600; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-SemiboldItalic.ttf");
+  font-weight: 600;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Bold.ttf");
+  font-weight: 700; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-BoldItalic.ttf");
+  font-weight: 700;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-ExtraBold.ttf");
+  font-weight: 800; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-ExtraBoldItalic.ttf");
+  font-weight: 800;
+  font-style: italic; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-Black.ttf");
+  font-weight: 900; }
+
+@font-face {
+  font-family: Raleway;
+  src: url("./font/raleway/Raleway-BlackItalic.ttf");
+  font-weight: 900;
+  font-style: italic; }
+
+html {
+  font-family: Raleway,Open Sans,Sans-Serif;
+  font-weight: 300;
+  font-size: 12px;
+  min-width: 320px; }
+  @media (min-width: 320px) {
+    html {
+      font-size: 12px; } }
+  @media (min-width: 468px) {
+    html {
+      font-size: 14px; } }
+  @media (min-width: 768px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 1024px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 1280px) {
+    html {
+      font-size: 18px; } }
+  html body {
+    margin: 0;
+    padding: 0;
+    background-color: #F2EBD9;
+    color: #0D0C2A; }
+
+header, .section-header {
+  font-family: Equal-Sans,Sans-Serif;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-weight: bold;
+  letter-spacing: 0.3rem;
+  margin-right: -0.3rem;
+  height: 2rem; }
+  header.dark, .dark.section-header {
+    color: #F2EBD9;
+    background: #0D0C2A;
+    margin-right: -1rem; }
+
+.section-header {
+  margin-bottom: 1rem; }
+
+p {
+  margin: 0;
+  font-size: 1rem;
+  text-align: justify; }
+
+ul {
+  padding: 0;
+  margin: 0; }
+  ul li {
+    list-style: none;
+    padding: 0; }
+
+table {
+  width: 100%; }
+
+section {
+  padding: 1rem 0; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+  a:hover {
+    color: blue;
+    text-decoration: underline; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
+.spacing {
+  height: 2rem; }
+
+html body {
+  min-width: 320px;
+  background-color: #F2EBD9; }
+
+#home #title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  top: 40%;
+  font-family: Equal-Sans,Raleway,Open Sans,Sans-serif;
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  margin-right: -0.3rem;
+  text-transform: uppercase;
+  text-align: center; }
+
+#home .links {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%) !important;
+  -o-transform: translate(-50%, -50%) !important;
+  -webkit-transform: translate(-50%, -50%) !important;
+  -ms-transform: translate(-50%, -50%) !important;
+  transform: translate(-50%, -50%) !important;
+  top: 60%;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center; }

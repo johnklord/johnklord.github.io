@@ -10,17 +10,27 @@ gulp.task('dev-server', function(){
   devServer();
 })
 
-gulp.task('compile-scss', function(){
-  return gulp.src("./src/client/assets/scss/style.scss")
+gulp.task('compile-resume',function(){
+  return gulp.src("./src/client/assets/scss/resume.scss")
     .pipe(gulpSass().on("error",gulpSass.logError))
-    .pipe(gulp.dest('./resume'))
+    .pipe(gulp.dest('./home/resume'))
+})
+
+gulp.task('compile-home',function(){
+  return gulp.src("./src/client/assets/scss/home.scss")
+    .pipe(gulpSass().on("error",gulpSass.logError))
+    .pipe(gulp.dest('./home'))
+})
+
+gulp.task('compile-scss', ['compile-resume','compile-home'],function(){
+  gutil.log("compiling scss...");
 })
 
 gulp.task('watch', function(){
   var watchPaths = [
-    path.join(__dirname,'resume/**/*.js'),
+    path.join(__dirname,'home/**/*.js'),
     path.join(__dirname,'src/**/*.scss'),
-    path.join(__dirname,'resume/**/*.html')
+    path.join(__dirname,'home/**/*.html')
   ];
   gulp.watch(watchPaths, ['compile-scss']);
 });
