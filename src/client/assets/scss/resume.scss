@@ -11,7 +11,6 @@
   max-width: 1024px;
   display: block;
   aside{
-    padding-left: calc(100% - 250px);
     margin: $document-margin;
     #name{
       @extend .animated;
@@ -21,14 +20,13 @@
       font-weight: bold;
       font-size: 2*$header-size;
       height: inherit;
-      text-align: right;
     }
     #line{
       @extend .animated;
       @extend .expand;
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
-      margin-left: -2rem;
+      margin-right: -2rem;
       width: calc(100% + 2rem);
       background: $primary-color;
       height: $line-height;
@@ -38,7 +36,6 @@
       @extend .fadeInLeft ;
       animation-delay: 1.2s;
       -webkit-animation-delay: 1.2s;
-      text-align:right;
     }
     #about{
       @extend .animated;
@@ -51,27 +48,12 @@
       @extend .fadeInLeft ;
       animation-delay: 1.6s;
       -webkit-animation-delay: 1.6s;
-      text-align: right;
     }
     #language{
       @extend .animated;
       @extend .fadeInLeft ;
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s;
-      text-align:right;
-      table{
-        width: auto;
-        margin-right: 0px;
-        margin-left: auto;
-        tbody{
-          tr{
-            td{
-              padding-right: 0;
-              padding-left: 1rem;
-            }
-          }
-        }
-      }
     }
     #download{
       @extend .animated;
@@ -109,6 +91,7 @@
           text-transform: uppercase;
         }
         .date{
+          width: 50%;
           text-align: right;
         }
         .major{
@@ -128,6 +111,7 @@
           text-transform: uppercase;
         }
         .date{
+          width: 50%;
           text-align: right;
         }
         .position{
@@ -146,16 +130,55 @@
     //display: flex;
     //flex-direction: row;
     aside{
+      //padding-left: calc(100% - 250px);
       padding-right: $document-margin;
       padding-left: 0;
-      min-width: 230px;
-      max-width: 230px;
+      min-width: $aside-width;
+      max-width: $aside-width;
       float:left;
+      #about{
+        *{
+          text-align: right;
+        }
+      }
+      #name{
+        text-align: right;
+      }
+      #line{
+        margin-right: 0rem;
+        margin-left: -2rem;
+      }
+      #contact{
+        *{
+          text-align:right;
+        }
+      }
+      #skills{
+        *{
+          text-align: right;
+        }
+      }
+      #language{
+        text-align:right;
+        table{
+          width: auto;
+          margin-right: 0px;
+          margin-left: auto;
+          tbody{
+            tr{
+              td{
+                padding-right: 0;
+                padding-left: 1rem;
+              }
+            }
+          }
+        }
+      }
     }
     main{
       float:left;
       padding-left: $document-margin;
-      width: calc( 100% - 230px - 6rem);
+      width: calc( 100% - #{$aside-width} - 6rem);
     }
   }
 }
