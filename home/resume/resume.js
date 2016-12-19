@@ -13,9 +13,9 @@
       var link = "http://maps.google.com/?q="+address;
       addressEle.wrapInner('<a target="_blank" href="'+link+'">');
     })();
-    //setTimeout(function(){
-      //document.body.dispatchEvent(new Event('view-ready'));
-    //},3000);
+    setTimeout(function(){
+      document.body.dispatchEvent(new Event('view-ready'));
+    },2000);
   })
 })();
 

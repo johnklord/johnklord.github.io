@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "gulp"
+    "start": "gulp",
+    "pdf": "electron-pdf ./home/resume/index.html ./kyle_wang_resume.pdf -e -p '{\"height\":450000,\"width\":300000}' -b -d true"
   },
   "dependencies": {},
   "devDependencies": {

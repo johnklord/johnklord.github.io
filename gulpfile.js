@@ -36,11 +36,11 @@ gulp.task('watch', function(){
     path.join(__dirname,'src/**/*.scss'),
     path.join(__dirname,'home/**/*.html')
   ];
-  gulp.watch(watchPaths, ['compile-scss','generate-pdf']);
+  gulp.watch(watchPaths, ['compile-scss']);
 });
 
 
 // Default task. Type 'gulp' in terminal to get build system going.
-gulp.task('default', ['dev-server','compile-scss','generate-pdf','watch'], function(){
+gulp.task('default', ['dev-server','compile-scss','watch'], function(){
   gutil.log('watching...');
 });
