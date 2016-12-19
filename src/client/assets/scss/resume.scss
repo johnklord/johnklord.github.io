@@ -19,7 +19,7 @@
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
       font-weight: bold;
-      font-size: 5rem;
+      font-size: 2*$header-size;
       height: inherit;
       text-align: right;
     }
@@ -33,18 +33,18 @@
       background: $primary-color;
       height: $line-height;
     }
-    #about{
+    #contact{
       @extend .animated;
       @extend .fadeInLeft ;
       animation-delay: 1.2s;
       -webkit-animation-delay: 1.2s;
+      text-align:right;
     }
-    #contact{
+    #about{
       @extend .animated;
       @extend .fadeInLeft ;
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s;
-      text-align:right;
     }
     #skills{
       @extend .animated;

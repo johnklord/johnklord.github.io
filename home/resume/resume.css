@@ -5,26 +5,26 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated, #resume aside #name, #resume aside #line, #resume aside #about, #resume aside #contact, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #education, #resume main #experience, #resume main #interests {
+.animated, #resume aside #name, #resume aside #line, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #education, #resume main #experience, #resume main #interests {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#about, #resume aside .infinite#contact, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#education, #resume main .infinite#experience, #resume main .infinite#interests {
+.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#contact, #resume aside .infinite#about, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#education, #resume main .infinite#experience, #resume main .infinite#interests {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#about, #resume aside .hinge#contact, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#education, #resume main .hinge#experience, #resume main .hinge#interests {
+.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#contact, #resume aside .hinge#about, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#education, #resume main .hinge#experience, #resume main .hinge#interests {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#about, #resume aside .flipOutX#contact, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#education, #resume main .flipOutX#experience, #resume main .flipOutX#interests,
+.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#contact, #resume aside .flipOutX#about, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#education, #resume main .flipOutX#experience, #resume main .flipOutX#interests,
 .animated.flipOutY,
 #resume aside .flipOutY#name,
 #resume aside .flipOutY#line,
-#resume aside .flipOutY#about,
 #resume aside .flipOutY#contact,
+#resume aside .flipOutY#about,
 #resume aside .flipOutY#skills,
 #resume aside .flipOutY#language,
 #resume aside .flipOutY#download,
@@ -34,8 +34,8 @@
 .animated.bounceIn,
 #resume aside .bounceIn#name,
 #resume aside .bounceIn#line,
-#resume aside .bounceIn#about,
 #resume aside .bounceIn#contact,
+#resume aside .bounceIn#about,
 #resume aside .bounceIn#skills,
 #resume aside .bounceIn#language,
 #resume aside .bounceIn#download,
@@ -45,8 +45,8 @@
 .animated.bounceOut,
 #resume aside .bounceOut#name,
 #resume aside .bounceOut#line,
-#resume aside .bounceOut#about,
 #resume aside .bounceOut#contact,
+#resume aside .bounceOut#about,
 #resume aside .bounceOut#skills,
 #resume aside .bounceOut#language,
 #resume aside .bounceOut#download,
@@ -924,7 +924,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInLeft, #resume aside #name, #resume aside #about, #resume aside #contact, #resume aside #skills, #resume aside #language, #resume aside #download {
+.fadeInLeft, #resume aside #name, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }
 
@@ -1278,7 +1278,7 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 
-.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#about, #resume aside .flip#contact, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#education, #resume main .flip#experience, #resume main .flip#interests {
+.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#contact, #resume aside .flip#about, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#education, #resume main .flip#experience, #resume main .flip#interests {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2722,20 +2722,25 @@ html {
     background-color: #F2EBD9;
     color: #0D0C2A; }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
 header, .section-header {
-  font-family: Equal-Sans,Sans-Serif;
+  font-family: Raleway,Sans-Serif;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  margin-right: 0;
+  height: 1.8rem;
   text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  margin-right: -0.3rem;
-  height: 2rem; }
+  font-weight: bold; }
   header.dark, .dark.section-header {
     color: #F2EBD9;
     background: #0D0C2A;
     margin-right: -1rem; }
 
 .section-header {
+  line-height: 1.8rem;
   margin-bottom: 1rem; }
 
 p {
@@ -2772,6 +2777,9 @@ a {
 .spacing {
   height: 2rem; }
 
+.sm-spacing {
+  height: 1rem; }
+
 #resume {
   margin: 0 auto;
   max-width: 1024px;
@@ -2783,7 +2791,7 @@ a {
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
       font-weight: bold;
-      font-size: 5rem;
+      font-size: 3.6rem;
       height: inherit;
       text-align: right; }
     #resume aside #line {
@@ -2792,14 +2800,14 @@ a {
       margin-left: -2rem;
       width: calc(100% + 2rem);
       background: #0D0C2A;
-      height: 2rem; }
-    #resume aside #about {
-      animation-delay: 1.2s;
-      -webkit-animation-delay: 1.2s; }
+      height: 1.8rem; }
     #resume aside #contact {
-      animation-delay: 1.4s;
-      -webkit-animation-delay: 1.4s;
+      animation-delay: 1.2s;
+      -webkit-animation-delay: 1.2s;
       text-align: right; }
+    #resume aside #about {
+      animation-delay: 1.4s;
+      -webkit-animation-delay: 1.4s; }
     #resume aside #skills {
       animation-delay: 1.6s;
       -webkit-animation-delay: 1.6s;

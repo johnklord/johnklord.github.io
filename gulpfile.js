@@ -26,17 +26,21 @@ gulp.task('compile-scss', ['compile-resume','compile-home'],function(){
   gutil.log("compiling scss...");
 })
 
+gulp.task("generate-pdf",function(){
+  //return genPdf();
+})
+
 gulp.task('watch', function(){
   var watchPaths = [
     path.join(__dirname,'home/**/*.js'),
     path.join(__dirname,'src/**/*.scss'),
     path.join(__dirname,'home/**/*.html')
   ];
-  gulp.watch(watchPaths, ['compile-scss']);
+  gulp.watch(watchPaths, ['compile-scss','generate-pdf']);
 });
 
 
 // Default task. Type 'gulp' in terminal to get build system going.
-gulp.task('default', ['dev-server','compile-scss','watch'], function(){
+gulp.task('default', ['dev-server','compile-scss','generate-pdf','watch'], function(){
   gutil.log('watching...');
 });

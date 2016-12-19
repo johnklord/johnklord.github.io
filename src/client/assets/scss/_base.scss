@@ -26,14 +26,19 @@ html{
   }
 }
 
+h1,h2,h3,h4,h5,h6{
+  padding: 0;
+  margin: 0;
+}
+
 header{
-  font-family: Equal-Sans,Sans-Serif;
-  text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  margin-right: -0.3rem;
+  font-family: Raleway,Sans-Serif;
+  font-size: $header-size;
+  letter-spacing: $header-letter-spacing;
+  margin-right: -1*$header-letter-spacing;
   height: $line-height;
+  text-transform: uppercase;
+  font-weight: bold;
   &.dark{
     color: $secondary-color;
     background: $primary-color;
@@ -42,6 +47,7 @@ header{
 }
 .section-header{
   @extend header;
+  line-height: $header-size;
   margin-bottom: 1rem;
 }
 

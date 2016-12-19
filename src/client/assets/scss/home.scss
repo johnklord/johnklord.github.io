@@ -47,21 +47,20 @@ html {
 }
 
 #home{
-  #title{
+  .wrapper{
     @include center_on_screen();
-    top: 40%;
-    font-family: Equal-Sans,Raleway,Open Sans,Sans-serif;
-    font-size: 5rem;
-    letter-spacing: 0.3rem;
-    margin-right: -0.3rem;
-    text-transform: uppercase;
-    text-align: center;
-  }
-  .links{
-    @include center_on_screen();
-    top: 60%;
-    font-size: 2rem;
-    text-transform: uppercase;
-    text-align: center;
+    #title{
+      font-family: Raleway,Open Sans,Sans-serif;
+      font-size: 5rem;
+      letter-spacing: 0.3rem;
+      margin-right: -0.3rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .links{
+      font-size: 2rem;
+      text-transform: uppercase;
+      text-align: center;
+    }
   }
 }

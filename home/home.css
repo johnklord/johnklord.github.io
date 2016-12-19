@@ -314,20 +314,25 @@ html {
     background-color: #F2EBD9;
     color: #0D0C2A; }
 
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0; }
+
 header, .section-header {
-  font-family: Equal-Sans,Sans-Serif;
+  font-family: Raleway,Sans-Serif;
+  font-size: 1.8rem;
+  letter-spacing: 0;
+  margin-right: 0;
+  height: 1.8rem;
   text-transform: uppercase;
-  font-size: 2.5rem;
-  font-weight: bold;
-  letter-spacing: 0.3rem;
-  margin-right: -0.3rem;
-  height: 2rem; }
+  font-weight: bold; }
   header.dark, .dark.section-header {
     color: #F2EBD9;
     background: #0D0C2A;
     margin-right: -1rem; }
 
 .section-header {
+  line-height: 1.8rem;
   margin-bottom: 1rem; }
 
 p {
@@ -364,11 +369,14 @@ a {
 .spacing {
   height: 2rem; }
 
+.sm-spacing {
+  height: 1rem; }
+
 html body {
   min-width: 320px;
   background-color: #F2EBD9; }
 
-#home #title {
+#home .wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -376,25 +384,15 @@ html body {
   -o-transform: translate(-50%, -50%) !important;
   -webkit-transform: translate(-50%, -50%) !important;
   -ms-transform: translate(-50%, -50%) !important;
-  transform: translate(-50%, -50%) !important;
-  top: 40%;
-  font-family: Equal-Sans,Raleway,Open Sans,Sans-serif;
-  font-size: 5rem;
-  letter-spacing: 0.3rem;
-  margin-right: -0.3rem;
-  text-transform: uppercase;
-  text-align: center; }
-
-#home .links {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate(-50%, -50%) !important;
-  -o-transform: translate(-50%, -50%) !important;
-  -webkit-transform: translate(-50%, -50%) !important;
-  -ms-transform: translate(-50%, -50%) !important;
-  transform: translate(-50%, -50%) !important;
-  top: 60%;
-  font-size: 2rem;
-  text-transform: uppercase;
-  text-align: center; }
+  transform: translate(-50%, -50%) !important; }
+  #home .wrapper #title {
+    font-family: Raleway,Open Sans,Sans-serif;
+    font-size: 5rem;
+    letter-spacing: 0.3rem;
+    margin-right: -0.3rem;
+    text-transform: uppercase;
+    text-align: center; }
+  #home .wrapper .links {
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center; }
