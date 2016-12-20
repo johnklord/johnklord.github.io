@@ -2763,12 +2763,7 @@ section {
 
 a {
   color: inherit;
-  text-decoration: none;
-  -webkit-transition: all 0.1s linear 0s;
-  -moz-transition: all 0.1s linear 0s;
-  -ms-transition: all 0.1s linear 0s;
-  -o-transition: all 0.1s linear 0s;
-  transition: all 0.1s linear 0s; }
+  text-decoration: none; }
   a:hover {
     font-weight: bold;
     text-decoration: underline; }

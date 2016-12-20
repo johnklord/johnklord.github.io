@@ -81,7 +81,6 @@ a{
   //}
   color: inherit;
   text-decoration: none;
-  @include transition($property: all, $duration: 0.1s, $timing: linear, $delay: 0s);
   &:hover{
     font-weight: bold;
     text-decoration: underline;
