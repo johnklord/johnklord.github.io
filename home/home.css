@@ -396,7 +396,8 @@ a {
   cursor: hand;
   background: none;
   border: 1px solid #0D0C2A;
-  text-align: center; }
+  text-align: center;
+  padding: 0.3rem; }
   .btn:hover, button:hover {
     color: #F2EBD9;
     background: #0D0C2A; }
@@ -425,3 +426,5 @@ html body {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center; }
+    #home .wrapper .links #resume-btn {
+      text-decoration: none; }
