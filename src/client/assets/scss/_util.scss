@@ -12,3 +12,34 @@
 .sm-spacing{
   height: $spacing*0.5;
 }
+
+.bullet-point{
+  list-style: initial;
+}
+
+.bullet-point-list{
+  padding: 5px;
+  li{
+    margin-left: 25px;
+  }
+}
+
+.hidden{
+  display: none;
+}
+.invisible{
+  visibility: hidden;
+}
+
+
+.btn,button{
+  @include transition($property: all, $duration: 0.2s, $timing: ease-in-out, $delay: 0s);
+  @include pointer();
+  background: none;
+  border: 1px solid $primary-color;
+  text-align: center;
+  &:hover{
+    color: $secondary-color;
+    background: $primary-color;
+  }
+}

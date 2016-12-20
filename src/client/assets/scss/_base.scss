@@ -1,21 +1,21 @@
 html{
   font-family: Raleway,Open Sans,Sans-Serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 10px;
   @include media(sm-phone){
-    font-size: 14px;
+    font-size: 12px;
   }
   @include media(lg-phone){
-    font-size: 16px;
+    font-size: 14px;
   }
   @include media(pad){
-    font-size: 18px;
+    font-size: 16px;
   }
   @include media(lg-pad){
-    font-size: 18px;
+    font-size: 16px;
   }
   @include media(desktop){
-    font-size: 18px;
+    font-size: 16px;
   }
   min-width: 320px;
   body{

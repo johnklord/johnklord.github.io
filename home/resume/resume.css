@@ -5,21 +5,21 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated, #resume aside #name, #resume aside #line, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #education, #resume main #experience, #resume main #interests {
+.animated, #resume aside #name, #resume aside #line, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #experience, #resume main #education, #resume main #interests {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#contact, #resume aside .infinite#about, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#education, #resume main .infinite#experience, #resume main .infinite#interests {
+.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#contact, #resume aside .infinite#about, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#experience, #resume main .infinite#education, #resume main .infinite#interests {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#contact, #resume aside .hinge#about, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#education, #resume main .hinge#experience, #resume main .hinge#interests {
+.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#contact, #resume aside .hinge#about, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#experience, #resume main .hinge#education, #resume main .hinge#interests {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#contact, #resume aside .flipOutX#about, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#education, #resume main .flipOutX#experience, #resume main .flipOutX#interests,
+.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#contact, #resume aside .flipOutX#about, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#experience, #resume main .flipOutX#education, #resume main .flipOutX#interests,
 .animated.flipOutY,
 #resume aside .flipOutY#name,
 #resume aside .flipOutY#line,
@@ -28,8 +28,8 @@
 #resume aside .flipOutY#skills,
 #resume aside .flipOutY#language,
 #resume aside .flipOutY#download,
-#resume main .flipOutY#education,
 #resume main .flipOutY#experience,
+#resume main .flipOutY#education,
 #resume main .flipOutY#interests,
 .animated.bounceIn,
 #resume aside .bounceIn#name,
@@ -39,8 +39,8 @@
 #resume aside .bounceIn#skills,
 #resume aside .bounceIn#language,
 #resume aside .bounceIn#download,
-#resume main .bounceIn#education,
 #resume main .bounceIn#experience,
+#resume main .bounceIn#education,
 #resume main .bounceIn#interests,
 .animated.bounceOut,
 #resume aside .bounceOut#name,
@@ -50,8 +50,8 @@
 #resume aside .bounceOut#skills,
 #resume aside .bounceOut#language,
 #resume aside .bounceOut#download,
-#resume main .bounceOut#education,
 #resume main .bounceOut#experience,
+#resume main .bounceOut#education,
 #resume main .bounceOut#interests {
   -webkit-animation-duration: .75s;
   animation-duration: .75s; }
@@ -1020,7 +1020,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInUp, #resume main #education, #resume main #experience, #resume main #interests {
+.fadeInUp, #resume main #experience, #resume main #education, #resume main #interests {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1278,7 +1278,7 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 
-.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#contact, #resume aside .flip#about, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#education, #resume main .flip#experience, #resume main .flip#interests {
+.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#contact, #resume aside .flip#about, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#experience, #resume main .flip#education, #resume main .flip#interests {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2699,23 +2699,23 @@
 html {
   font-family: Raleway,Open Sans,Sans-Serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 10px;
   min-width: 320px; }
   @media (min-width: 320px) {
     html {
-      font-size: 14px; } }
+      font-size: 12px; } }
   @media (min-width: 468px) {
     html {
-      font-size: 16px; } }
+      font-size: 14px; } }
   @media (min-width: 768px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media (min-width: 1024px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media (min-width: 1280px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   html body {
     margin: 0;
     padding: 0;
@@ -2780,6 +2780,35 @@ a {
 .sm-spacing {
   height: 1rem; }
 
+.bullet-point {
+  list-style: initial; }
+
+.bullet-point-list {
+  padding: 5px; }
+  .bullet-point-list li {
+    margin-left: 25px; }
+
+.hidden {
+  display: none; }
+
+.invisible {
+  visibility: hidden; }
+
+.btn, button {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+  cursor: hand;
+  background: none;
+  border: 1px solid #0D0C2A;
+  text-align: center; }
+  .btn:hover, button:hover {
+    color: #F2EBD9;
+    background: #0D0C2A; }
+
 #resume {
   margin: 0 auto;
   max-width: 1024px;
@@ -2814,37 +2843,27 @@ a {
     #resume aside #download {
       animation-delay: 2.0s;
       -webkit-animation-delay: 2.0s; }
-      #resume aside #download a .btn {
-        -webkit-transition: all 0.2s ease-in-out 0s;
-        -moz-transition: all 0.2s ease-in-out 0s;
-        -ms-transition: all 0.2s ease-in-out 0s;
-        -o-transition: all 0.2s ease-in-out 0s;
-        transition: all 0.2s ease-in-out 0s;
-        border: 1px solid #0D0C2A;
-        text-align: center; }
-      #resume aside #download a:hover {
-        text-decoration: none; }
-        #resume aside #download a:hover .btn {
-          color: #F2EBD9;
-          background: #0D0C2A; }
+      #resume aside #download #page-size-selection-wrapper {
+        display: table;
+        width: 100%; }
+        #resume aside #download #page-size-selection-wrapper div {
+          display: table-cell;
+          width: 50%;
+          padding-top: 5%; }
+          #resume aside #download #page-size-selection-wrapper div#a4-form {
+            padding-right: 5%; }
+          #resume aside #download #page-size-selection-wrapper div#letter-form {
+            padding-left: 5%; }
+          #resume aside #download #page-size-selection-wrapper div button {
+            width: 100%; }
   #resume main {
     margin: 1rem; }
     @media (min-width: 768px) {
       #resume main {
-        padding-top: 20.9rem; } }
-    #resume main #education {
+        padding-top: 9.5rem; } }
+    #resume main #experience {
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s; }
-      #resume main #education table.education-header .school {
-        text-transform: uppercase; }
-      #resume main #education table.education-header .date {
-        width: 50%;
-        text-align: right; }
-      #resume main #education table.education-header .advisor {
-        text-align: right; }
-    #resume main #experience {
-      animation-delay: 1.6s;
-      -webkit-animation-delay: 1.6s; }
       #resume main #experience table.experience-header .workplace {
         text-transform: uppercase; }
       #resume main #experience table.experience-header .date {
@@ -2852,6 +2871,16 @@ a {
         text-align: right; }
       #resume main #experience table.experience-header .position {
         font-style: italic; }
+    #resume main #education {
+      animation-delay: 1.6s;
+      -webkit-animation-delay: 1.6s; }
+      #resume main #education table.education-header .school {
+        text-transform: uppercase; }
+      #resume main #education table.education-header .date {
+        width: 50%;
+        text-align: right; }
+      #resume main #education table.education-header .advisor {
+        text-align: right; }
     #resume main #interests {
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s; }
@@ -2893,13 +2922,13 @@ html.black-and-white body {
   html.black-and-white body header.dark, html.black-and-white body .dark.section-header {
     color: white;
     background: black; }
-  html.black-and-white body #root aside #line {
+  html.black-and-white body #resume aside #line {
     background: black; }
-  html.black-and-white body #root aside #download a:hover .btn {
+  html.black-and-white body .btn, html.black-and-white body button {
     color: white;
     background: black; }
-  html.black-and-white body #root aside #download a .btn {
-    border: 1px solid black; }
+    html.black-and-white body .btn:hover, html.black-and-white body button:hover {
+      border: 1px solid black; }
 
 html.white-and-black body {
   background-color: black;
@@ -2907,13 +2936,13 @@ html.white-and-black body {
   html.white-and-black body header.dark, html.white-and-black body .dark.section-header {
     color: black;
     background: white; }
-  html.white-and-black body #root aside #line {
+  html.white-and-black body #resume aside #line {
     background: white; }
-  html.white-and-black body #root aside #download a:hover .btn {
+  html.white-and-black body .btn, html.white-and-black body button {
     color: black;
     background: white; }
-  html.white-and-black body #root aside #download a .btn {
-    border: 1px solid white; }
+    html.white-and-black body .btn:hover, html.white-and-black body button:hover {
+      border: 1px solid white; }
 
 html.navy-and-lightBrown body {
   background-color: #F2EBD9;
@@ -2921,13 +2950,13 @@ html.navy-and-lightBrown body {
   html.navy-and-lightBrown body header.dark, html.navy-and-lightBrown body .dark.section-header {
     color: #F2EBD9;
     background: #0D0C2A; }
-  html.navy-and-lightBrown body #root aside #line {
+  html.navy-and-lightBrown body #resume aside #line {
     background: #0D0C2A; }
-  html.navy-and-lightBrown body #root aside #download a:hover .btn {
+  html.navy-and-lightBrown body .btn, html.navy-and-lightBrown body button {
     color: #F2EBD9;
     background: #0D0C2A; }
-  html.navy-and-lightBrown body #root aside #download a .btn {
-    border: 1px solid #0D0C2A; }
+    html.navy-and-lightBrown body .btn:hover, html.navy-and-lightBrown body button:hover {
+      border: 1px solid #0D0C2A; }
 
 html.red-and-lightBrown body {
   background-color: #F2EBD9;
@@ -2935,13 +2964,13 @@ html.red-and-lightBrown body {
   html.red-and-lightBrown body header.dark, html.red-and-lightBrown body .dark.section-header {
     color: #F2EBD9;
     background: #B02C29; }
-  html.red-and-lightBrown body #root aside #line {
+  html.red-and-lightBrown body #resume aside #line {
     background: #B02C29; }
-  html.red-and-lightBrown body #root aside #download a:hover .btn {
+  html.red-and-lightBrown body .btn, html.red-and-lightBrown body button {
     color: #F2EBD9;
     background: #B02C29; }
-  html.red-and-lightBrown body #root aside #download a .btn {
-    border: 1px solid #B02C29; }
+    html.red-and-lightBrown body .btn:hover, html.red-and-lightBrown body button:hover {
+      border: 1px solid #B02C29; }
 
 html.grey-and-lightBrown body {
   background-color: #F2EBD9;
@@ -2949,10 +2978,24 @@ html.grey-and-lightBrown body {
   html.grey-and-lightBrown body header.dark, html.grey-and-lightBrown body .dark.section-header {
     color: #F2EBD9;
     background: #525A5C; }
-  html.grey-and-lightBrown body #root aside #line {
+  html.grey-and-lightBrown body #resume aside #line {
     background: #525A5C; }
-  html.grey-and-lightBrown body #root aside #download a:hover .btn {
+  html.grey-and-lightBrown body .btn, html.grey-and-lightBrown body button {
     color: #F2EBD9;
     background: #525A5C; }
-  html.grey-and-lightBrown body #root aside #download a .btn {
-    border: 1px solid #525A5C; }
+    html.grey-and-lightBrown body .btn:hover, html.grey-and-lightBrown body button:hover {
+      border: 1px solid #525A5C; }
+
+html.grey-and-white body {
+  background-color: white;
+  color: #525A5C; }
+  html.grey-and-white body header.dark, html.grey-and-white body .dark.section-header {
+    color: white;
+    background: #525A5C; }
+  html.grey-and-white body #resume aside #line {
+    background: #525A5C; }
+  html.grey-and-white body .btn, html.grey-and-white body button {
+    color: white;
+    background: #525A5C; }
+    html.grey-and-white body .btn:hover, html.grey-and-white body button:hover {
+      border: 1px solid #525A5C; }

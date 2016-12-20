@@ -60,17 +60,21 @@
       @extend .fadeInLeft ;
       animation-delay: 2.0s;
       -webkit-animation-delay: 2.0s;
-      a{
-        .btn{
-          @include transition($property: all, $duration: 0.2s, $timing: ease-in-out, $delay: 0s);
-          border: 1px solid $primary-color;
-          text-align: center;
-        }
-        &:hover{
-          text-decoration: none;
-          .btn{
-            color: $secondary-color;
-            background: $primary-color;
+      #page-size-selection-wrapper{
+        display: table;
+        width: 100%;
+        div{
+          display: table-cell;
+          width: 50%;
+          padding-top: 5%;
+          &#a4-form{
+            padding-right: 5%;
+          }
+          &#letter-form{
+            padding-left: 5%;
+          }
+          button{
+            width: 100%;
           }
         }
       }
@@ -81,11 +85,29 @@
       padding-top: $main-head-spacing;
     }
     margin: $document-margin;
-    #education{
+    #experience{
       @extend .animated;
       @extend .fadeInUp;
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s;
+      table.experience-header{
+        .workplace{
+          text-transform: uppercase;
+        }
+        .date{
+          width: 50%;
+          text-align: right;
+        }
+        .position{
+          font-style: italic;
+        }
+      }
+    }
+    #education{
+      @extend .animated;
+      @extend .fadeInUp;
+      animation-delay: 1.6s;
+      -webkit-animation-delay: 1.6s;
       table.education-header{
         .school{
           text-transform: uppercase;
@@ -101,29 +123,17 @@
         }
       }
     }
-    #experience{
-      @extend .animated;
-      @extend .fadeInUp;
-      animation-delay: 1.6s;
-      -webkit-animation-delay: 1.6s;
-      table.experience-header{
-        .workplace{
-          text-transform: uppercase;
-        }
-        .date{
-          width: 50%;
-          text-align: right;
-        }
-        .position{
-          font-style: italic;
-        }
-      }
-    }
     #interests{
       @extend .animated;
       @extend .fadeInUp;
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s;
+      #interest-list{
+        //li{
+          //padding-right: 1.5rem;
+          //float: left;
+        //}
+      }
     }
   }
   @include media(pad){

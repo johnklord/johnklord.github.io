@@ -291,23 +291,23 @@
 html {
   font-family: Raleway,Open Sans,Sans-Serif;
   font-weight: 300;
-  font-size: 12px;
+  font-size: 10px;
   min-width: 320px; }
   @media (min-width: 320px) {
     html {
-      font-size: 14px; } }
+      font-size: 12px; } }
   @media (min-width: 468px) {
     html {
-      font-size: 16px; } }
+      font-size: 14px; } }
   @media (min-width: 768px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media (min-width: 1024px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   @media (min-width: 1280px) {
     html {
-      font-size: 18px; } }
+      font-size: 16px; } }
   html body {
     margin: 0;
     padding: 0;
@@ -371,6 +371,35 @@ a {
 
 .sm-spacing {
   height: 1rem; }
+
+.bullet-point {
+  list-style: initial; }
+
+.bullet-point-list {
+  padding: 5px; }
+  .bullet-point-list li {
+    margin-left: 25px; }
+
+.hidden {
+  display: none; }
+
+.invisible {
+  visibility: hidden; }
+
+.btn, button {
+  -webkit-transition: all 0.2s ease-in-out 0s;
+  -moz-transition: all 0.2s ease-in-out 0s;
+  -ms-transition: all 0.2s ease-in-out 0s;
+  -o-transition: all 0.2s ease-in-out 0s;
+  transition: all 0.2s ease-in-out 0s;
+  cursor: pointer;
+  cursor: hand;
+  background: none;
+  border: 1px solid #0D0C2A;
+  text-align: center; }
+  .btn:hover, button:hover {
+    color: #F2EBD9;
+    background: #0D0C2A; }
 
 html body {
   min-width: 320px;

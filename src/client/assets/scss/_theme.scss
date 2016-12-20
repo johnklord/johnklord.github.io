@@ -7,24 +7,18 @@
         color: $secondary;
         background: $primary;
       }
-      #root{
+      #resume{
         aside{
           #line{
             background: $primary;
           }
-          #download{
-            a{
-              &:hover{
-                .btn{
-                  color: $secondary;
-                  background: $primary;
-                }
-              }
-              .btn{
-                border: 1px solid $primary;
-              }
-            }
-          }
+        }
+      }
+      .btn,button{
+        color: $secondary;
+        background: $primary;
+        &:hover{
+          border: 1px solid $primary;
         }
       }
     }
@@ -36,3 +30,4 @@
 @include theme("navy-and-lightBrown",$navy,$light-brown);
 @include theme("red-and-lightBrown",$red,$light-brown);
 @include theme("grey-and-lightBrown",$grey,$light-brown);
+@include theme("grey-and-white",$grey,white);
