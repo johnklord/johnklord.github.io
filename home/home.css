@@ -288,6 +288,9 @@
   font-weight: 900;
   font-style: italic; }
 
+.warning-color {
+  color: #B02C29; }
+
 html {
   font-family: Raleway,Open Sans,Sans-Serif;
   font-weight: 300;
@@ -426,5 +429,9 @@ html body {
     font-size: 2rem;
     text-transform: uppercase;
     text-align: center; }
-    #home .wrapper .links #resume-btn {
-      text-decoration: none; }
+    #home .wrapper .links ul li {
+      padding-bottom: 1rem; }
+      #home .wrapper .links ul li .home-nav-btns {
+        text-decoration: none; }
+        #home .wrapper .links ul li .home-nav-btns div {
+          width: 100%; }

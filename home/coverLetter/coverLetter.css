@@ -5,54 +5,39 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated, #resume aside #name, #resume aside #line, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #experience, #resume main #education, #resume main #interests {
+.animated, #coverLetter aside #name, #coverLetter aside #line, #coverLetter aside #contact, #coverLetter aside #download, #coverLetter main article {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#contact, #resume aside .infinite#about, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#experience, #resume main .infinite#education, #resume main .infinite#interests {
+.animated.infinite, #coverLetter aside .infinite#name, #coverLetter aside .infinite#line, #coverLetter aside .infinite#contact, #coverLetter aside .infinite#download, #coverLetter main article.infinite {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#contact, #resume aside .hinge#about, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#experience, #resume main .hinge#education, #resume main .hinge#interests {
+.animated.hinge, #coverLetter aside .hinge#name, #coverLetter aside .hinge#line, #coverLetter aside .hinge#contact, #coverLetter aside .hinge#download, #coverLetter main article.hinge {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#contact, #resume aside .flipOutX#about, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#experience, #resume main .flipOutX#education, #resume main .flipOutX#interests,
+.animated.flipOutX, #coverLetter aside .flipOutX#name, #coverLetter aside .flipOutX#line, #coverLetter aside .flipOutX#contact, #coverLetter aside .flipOutX#download, #coverLetter main article.flipOutX,
 .animated.flipOutY,
-#resume aside .flipOutY#name,
-#resume aside .flipOutY#line,
-#resume aside .flipOutY#contact,
-#resume aside .flipOutY#about,
-#resume aside .flipOutY#skills,
-#resume aside .flipOutY#language,
-#resume aside .flipOutY#download,
-#resume main .flipOutY#experience,
-#resume main .flipOutY#education,
-#resume main .flipOutY#interests,
+#coverLetter aside .flipOutY#name,
+#coverLetter aside .flipOutY#line,
+#coverLetter aside .flipOutY#contact,
+#coverLetter aside .flipOutY#download,
+#coverLetter main article.flipOutY,
 .animated.bounceIn,
-#resume aside .bounceIn#name,
-#resume aside .bounceIn#line,
-#resume aside .bounceIn#contact,
-#resume aside .bounceIn#about,
-#resume aside .bounceIn#skills,
-#resume aside .bounceIn#language,
-#resume aside .bounceIn#download,
-#resume main .bounceIn#experience,
-#resume main .bounceIn#education,
-#resume main .bounceIn#interests,
+#coverLetter aside .bounceIn#name,
+#coverLetter aside .bounceIn#line,
+#coverLetter aside .bounceIn#contact,
+#coverLetter aside .bounceIn#download,
+#coverLetter main article.bounceIn,
 .animated.bounceOut,
-#resume aside .bounceOut#name,
-#resume aside .bounceOut#line,
-#resume aside .bounceOut#contact,
-#resume aside .bounceOut#about,
-#resume aside .bounceOut#skills,
-#resume aside .bounceOut#language,
-#resume aside .bounceOut#download,
-#resume main .bounceOut#experience,
-#resume main .bounceOut#education,
-#resume main .bounceOut#interests {
+#coverLetter aside .bounceOut#name,
+#coverLetter aside .bounceOut#line,
+#coverLetter aside .bounceOut#contact,
+#coverLetter aside .bounceOut#download,
+#coverLetter main article.bounceOut {
   -webkit-animation-duration: .75s;
   animation-duration: .75s; }
 
@@ -924,7 +909,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInLeft, #resume aside #name, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download {
+.fadeInLeft, #coverLetter aside #name, #coverLetter aside #contact, #coverLetter aside #download {
   -webkit-animation-name: fadeInLeft;
   animation-name: fadeInLeft; }
 
@@ -972,7 +957,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInRight {
+.fadeInRight, #coverLetter main article {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight; }
 
@@ -1020,7 +1005,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInUp, #resume main #experience, #resume main #education, #resume main #interests {
+.fadeInUp {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1278,7 +1263,7 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 
-.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#contact, #resume aside .flip#about, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#experience, #resume main .flip#education, #resume main .flip#interests {
+.animated.flip, #coverLetter aside .flip#name, #coverLetter aside .flip#line, #coverLetter aside .flip#contact, #coverLetter aside .flip#download, #coverLetter main article.flip {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2402,7 +2387,7 @@
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1); } }
 
-.expand, #resume aside #line {
+.expand, #coverLetter aside #line {
   -webkit-animation-name: expand;
   animation-name: expand; }
 
@@ -2813,193 +2798,71 @@ a {
     color: #F2EBD9;
     background: #0D0C2A; }
 
-#resume {
+#coverLetter {
   margin: 0 auto;
   max-width: 1024px;
   display: block; }
-  #resume aside {
+  #coverLetter aside {
     margin: 1rem; }
-    #resume aside #name {
+    #coverLetter aside #name {
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
       font-weight: bold;
       font-size: 3.6rem;
       height: inherit; }
-    #resume aside #line {
+    #coverLetter aside #line {
       animation-delay: 1s;
       -webkit-animation-delay: 1s;
       margin-right: -2rem;
       width: calc(100% + 2rem);
       background: #0D0C2A;
       height: 1.8rem; }
-    #resume aside #contact {
+    #coverLetter aside #contact {
       animation-delay: 1.2s;
       -webkit-animation-delay: 1.2s; }
-    #resume aside #about {
+    #coverLetter aside #download {
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s; }
-    #resume aside #skills {
-      animation-delay: 1.6s;
-      -webkit-animation-delay: 1.6s; }
-    #resume aside #language {
-      animation-delay: 1.8s;
-      -webkit-animation-delay: 1.8s; }
-    #resume aside #download {
-      animation-delay: 2.0s;
-      -webkit-animation-delay: 2.0s; }
-      #resume aside #download #page-size-selection-wrapper {
+      #coverLetter aside #download #page-size-selection-wrapper {
         display: table;
         width: 100%; }
-        #resume aside #download #page-size-selection-wrapper div {
+        #coverLetter aside #download #page-size-selection-wrapper div {
           display: table-cell;
           width: 50%;
           padding-top: 5%; }
-          #resume aside #download #page-size-selection-wrapper div#a4-form {
+          #coverLetter aside #download #page-size-selection-wrapper div#a4-form {
             padding-right: 5%; }
-          #resume aside #download #page-size-selection-wrapper div#letter-form {
+          #coverLetter aside #download #page-size-selection-wrapper div#letter-form {
             padding-left: 5%; }
-          #resume aside #download #page-size-selection-wrapper div button {
+          #coverLetter aside #download #page-size-selection-wrapper div button {
             width: 100%; }
-  #resume main {
+  #coverLetter main {
     margin: 1rem; }
     @media (min-width: 768px) {
-      #resume main {
-        padding-top: 9.5rem; } }
-    #resume main #experience {
-      animation-delay: 1.4s;
-      -webkit-animation-delay: 1.4s; }
-      #resume main #experience table.experience-header .workplace {
-        text-transform: uppercase; }
-      #resume main #experience table.experience-header .date {
-        width: 50%;
-        text-align: right; }
-      #resume main #experience table.experience-header .position {
-        font-style: italic; }
-    #resume main #education {
+      #coverLetter main {
+        padding-top: 19.5rem; } }
+    #coverLetter main article {
       animation-delay: 1.6s;
       -webkit-animation-delay: 1.6s; }
-      #resume main #education table.education-header .school {
-        text-transform: uppercase; }
-      #resume main #education table.education-header .date {
-        width: 50%;
-        text-align: right; }
-      #resume main #education table.education-header .advisor {
-        text-align: right; }
-    #resume main #interests {
-      animation-delay: 1.8s;
-      -webkit-animation-delay: 1.8s; }
+      #coverLetter main article p {
+        padding-bottom: 1rem; }
   @media (min-width: 768px) {
-    #resume aside {
+    #coverLetter aside {
       padding-right: 1rem;
       padding-left: 0;
       min-width: 277px;
       max-width: 277px;
       float: left; }
-      #resume aside #about * {
+      #coverLetter aside #about * {
         text-align: right; }
-      #resume aside #name {
+      #coverLetter aside #name {
         text-align: right; }
-      #resume aside #line {
+      #coverLetter aside #line {
         margin-right: 0rem;
         margin-left: -2rem; }
-      #resume aside #contact * {
+      #coverLetter aside #contact * {
         text-align: right; }
-      #resume aside #skills * {
-        text-align: right; }
-      #resume aside #language {
-        text-align: right; }
-        #resume aside #language table {
-          width: auto;
-          margin-right: 0px;
-          margin-left: auto; }
-          #resume aside #language table tbody tr td {
-            padding-right: 0;
-            padding-left: 1rem; }
-    #resume main {
+    #coverLetter main {
       float: left;
       padding-left: 1rem;
       width: calc( 100% - 277px - 6rem); } }
-
-html.black-and-white body {
-  background-color: white;
-  color: black; }
-  html.black-and-white body header.dark, html.black-and-white body .dark.section-header {
-    color: white;
-    background: black; }
-  html.black-and-white body #resume aside #line {
-    background: black; }
-  html.black-and-white body .btn, html.black-and-white body button {
-    color: white;
-    background: black; }
-    html.black-and-white body .btn:hover, html.black-and-white body button:hover {
-      border: 1px solid black; }
-
-html.white-and-black body {
-  background-color: black;
-  color: white; }
-  html.white-and-black body header.dark, html.white-and-black body .dark.section-header {
-    color: black;
-    background: white; }
-  html.white-and-black body #resume aside #line {
-    background: white; }
-  html.white-and-black body .btn, html.white-and-black body button {
-    color: black;
-    background: white; }
-    html.white-and-black body .btn:hover, html.white-and-black body button:hover {
-      border: 1px solid white; }
-
-html.navy-and-lightBrown body {
-  background-color: #F2EBD9;
-  color: #0D0C2A; }
-  html.navy-and-lightBrown body header.dark, html.navy-and-lightBrown body .dark.section-header {
-    color: #F2EBD9;
-    background: #0D0C2A; }
-  html.navy-and-lightBrown body #resume aside #line {
-    background: #0D0C2A; }
-  html.navy-and-lightBrown body .btn, html.navy-and-lightBrown body button {
-    color: #F2EBD9;
-    background: #0D0C2A; }
-    html.navy-and-lightBrown body .btn:hover, html.navy-and-lightBrown body button:hover {
-      border: 1px solid #0D0C2A; }
-
-html.red-and-lightBrown body {
-  background-color: #F2EBD9;
-  color: #B02C29; }
-  html.red-and-lightBrown body header.dark, html.red-and-lightBrown body .dark.section-header {
-    color: #F2EBD9;
-    background: #B02C29; }
-  html.red-and-lightBrown body #resume aside #line {
-    background: #B02C29; }
-  html.red-and-lightBrown body .btn, html.red-and-lightBrown body button {
-    color: #F2EBD9;
-    background: #B02C29; }
-    html.red-and-lightBrown body .btn:hover, html.red-and-lightBrown body button:hover {
-      border: 1px solid #B02C29; }
-
-html.grey-and-lightBrown body {
-  background-color: #F2EBD9;
-  color: #525A5C; }
-  html.grey-and-lightBrown body header.dark, html.grey-and-lightBrown body .dark.section-header {
-    color: #F2EBD9;
-    background: #525A5C; }
-  html.grey-and-lightBrown body #resume aside #line {
-    background: #525A5C; }
-  html.grey-and-lightBrown body .btn, html.grey-and-lightBrown body button {
-    color: #F2EBD9;
-    background: #525A5C; }
-    html.grey-and-lightBrown body .btn:hover, html.grey-and-lightBrown body button:hover {
-      border: 1px solid #525A5C; }
-
-html.grey-and-white body {
-  background-color: white;
-  color: #525A5C; }
-  html.grey-and-white body header.dark, html.grey-and-white body .dark.section-header {
-    color: white;
-    background: #525A5C; }
-  html.grey-and-white body #resume aside #line {
-    background: #525A5C; }
-  html.grey-and-white body .btn, html.grey-and-white body button {
-    color: white;
-    background: #525A5C; }
-    html.grey-and-white body .btn:hover, html.grey-and-white body button:hover {
-      border: 1px solid #525A5C; }

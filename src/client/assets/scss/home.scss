@@ -61,8 +61,16 @@ html {
       font-size: 2rem;
       text-transform: uppercase;
       text-align: center;
-      #resume-btn{
-        text-decoration: none;
+      ul{
+        li{
+          padding-bottom: 1rem;
+          .home-nav-btns{
+            text-decoration: none;
+            div{
+              width: 100%;
+            }
+          }
+        }
       }
     }
   }

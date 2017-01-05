@@ -5,8 +5,10 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp",
-    "pdfA4": "electron-pdf ./home/resume/index.html ./kyle_wang_resume_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true",
-    "pdfLetter": "electron-pdf ./home/resume/index.html ./kyle_wang_resume_letter.pdf -e -p '{\"height\":388235,\"width\":300000}' -b -d true"
+    "pdfA4": "electron-pdf ./home/resume/index.html ./kyle_wang_resume_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
+    "pdfA4L":"electron-pdf ./home/coverLetter/index.html ./kyle_wang_coverLetter_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
+    "pdfLetter": "electron-pdf ./home/resume/index.html ./kyle_wang_resume_letter.pdf -e -p '{\"height\":388235,\"width\":300000}' -b -d true; ",
+    "pdfLetterL":"electron-pdf ./home/coverLetter/index.html ./kyle_wang_coverLetter_letter.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;"
   },
   "dependencies": {},
   "devDependencies": {

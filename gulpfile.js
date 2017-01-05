@@ -21,8 +21,13 @@ gulp.task('compile-home',function(){
     .pipe(gulpSass().on("error",gulpSass.logError))
     .pipe(gulp.dest('./home'))
 })
+gulp.task("compile-coverLetter",function(){
+  return gulp.src("./src/client/assets/scss/coverLetter.scss")
+    .pipe(gulpSass().on("error",gulpSass.logError))
+    .pipe(gulp.dest('./home/coverLetter'))
+})
 
-gulp.task('compile-scss', ['compile-resume','compile-home'],function(){
+gulp.task('compile-scss', ['compile-resume','compile-home','compile-coverLetter'],function(){
   gutil.log("compiling scss...");
 })
 

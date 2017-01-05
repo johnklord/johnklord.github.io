@@ -1,0 +1,114 @@
+@import "animate";
+@import "font";
+@import "variables";
+@import "mixins";
+@import "color";
+@import "base";
+@import "util";
+
+#coverLetter{
+  margin: 0 auto;
+  max-width: 1024px;
+  display: block;
+  aside{
+    margin: $document-margin;
+    #name{
+      @extend .animated;
+      @extend .fadeInLeft ;
+      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+      font-weight: bold;
+      font-size: 2*$header-size;
+      height: inherit;
+    }
+    #line{
+      @extend .animated;
+      @extend .expand;
+      animation-delay: 1s;
+      -webkit-animation-delay: 1s;
+      margin-right: -2rem;
+      width: calc(100% + 2rem);
+      background: $primary-color;
+      height: $line-height;
+    }
+    #contact{
+      @extend .animated;
+      @extend .fadeInLeft ;
+      animation-delay: 1.2s;
+      -webkit-animation-delay: 1.2s;
+    }
+    #download{
+      @extend .animated;
+      @extend .fadeInLeft ;
+      animation-delay: 1.4s;
+      -webkit-animation-delay: 1.4s;
+      #page-size-selection-wrapper{
+        display: table;
+        width: 100%;
+        div{
+          display: table-cell;
+          width: 50%;
+          padding-top: 5%;
+          &#a4-form{
+            padding-right: 5%;
+          }
+          &#letter-form{
+            padding-left: 5%;
+          }
+          button{
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+  main{
+    @include media(pad){
+      padding-top: $main-head-spacing+10rem;
+    }
+    margin: $document-margin;
+    article{
+      @extend .animated;
+      @extend .fadeInRight;
+      animation-delay: 1.6s;
+      -webkit-animation-delay: 1.6s;
+      p{
+        padding-bottom:1rem;
+      }
+    }
+  }
+  @include media(pad){
+    //display: flex;
+    //flex-direction: row;
+    aside{
+      //padding-left: calc(100% - 250px);
+      padding-right: $document-margin;
+      padding-left: 0;
+      min-width: $aside-width;
+      max-width: $aside-width;
+      float:left;
+      #about{
+        *{
+          text-align: right;
+        }
+      }
+      #name{
+        text-align: right;
+      }
+      #line{
+        margin-right: 0rem;
+        margin-left: -2rem;
+      }
+      #contact{
+        *{
+          text-align:right;
+        }
+      }
+    }
+    main{
+      float:left;
+      padding-left: $document-margin;
+      width: calc( 100% - #{$aside-width} - 6rem);
+    }
+  }
+}
