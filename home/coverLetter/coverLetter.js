@@ -3,7 +3,6 @@
 
     $("#coverLetter").load("../coverLetter.template.html",null,function(){
       $("#download-btn").click(function(e){
-        console.log('cliekd');
         $("#page-size-selection-wrapper").toggleClass("invisible");
         $("#download-btn").toggleClass("hidden");
         $("#select-page-size-btn").toggleClass("hidden");
@@ -21,9 +20,6 @@
       $("#letter-form").click(function(){
         window.location.href = '/pdfs/coverLetters/'+companyName+"/kyle_wang_"+companyName+"_coverLetter_letter.pdf";
       })
-      setTimeout(function(){
-        document.body.dispatchEvent(new Event('view-ready'));
-      },2000);
       $.ajax({
         url: "./coverLetter.md", 
         type: 'get', 
@@ -31,6 +27,10 @@
         async: true,
         success: function(data) {
           $("#markdown-content").html(marked(data));
+          console.log("here");
+          setTimeout(function(){
+            document.body.dispatchEvent(new Event('view-ready'));
+          },3000);
         } 
       });
     });

@@ -7,8 +7,8 @@
     "start": "gulp",
     "pdfA4": "electron-pdf ./home/resume/index.html ./pdfs/resume/kyle_wang_resume_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
     "pdfLetter": "electron-pdf ./home/resume/index.html ./pdfs/resume/kyle_wang_resume_letter.pdf -e -p '{\"height\":388235,\"width\":300000}' -b -d true; ",
-    "pdfjwtA4L": "electron-pdf ./home/coverLetter/index.html ./pdfs/coverLetters/jwt/kyle_wang_jwt_coverLetter_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
-    "pdfjwtLetterL": "electron-pdf ./home/coverLetter/index.html ./pdfs/coverLetters/jwt/kyle_wang_jwt_coverLetter_letter.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;"
+    "pdfjwtA4L": "electron-pdf ./home/coverLetter/jwt/index.html ./pdfs/coverLetters/jwt/kyle_wang_jwt_coverLetter_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
+    "pdfjwtLetterL": "electron-pdf ./home/coverLetter/jwt/index.html ./pdfs/coverLetters/jwt/kyle_wang_jwt_coverLetter_letter.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;"
   },
   "dependencies": {
     "marked": "^0.3.6",
