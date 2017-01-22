@@ -14,7 +14,7 @@
         $("#select-page-size-btn").toggleClass("hidden");
       })
       var companyName = window.location.pathname.slice(0,-1).split("/").pop();
-      console.log(companyName);
+      if(typeof companyName === "undefined" || companyName === "" || companyName === null){console.warn("no companyName",companyName);}
       $("#a4-form").click(function(){
         window.location.href = '/pdfs/coverLetters/'+companyName+"/kyle_wang_"+companyName+"_coverLetter_a4.pdf";
       })
