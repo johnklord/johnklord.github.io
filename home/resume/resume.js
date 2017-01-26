@@ -1,5 +1,11 @@
 (function(){
   $(document).ready(function(){
+
+    var runningInElectron = window && window.process && window.process.type;
+    if(runningInElectron){
+      $("#download").hide();
+    }
+
     var pageSizeSelectionWrapper = $("#page-size-selection-wrapper");
     var selectPageSizeBtn = $("#select-page-size-btn");
     var downloadBtn =  $("#download-btn");
@@ -20,7 +26,7 @@
     })();
     setTimeout(function(){
       document.body.dispatchEvent(new Event('view-ready'));
-    },2000);
+    },3000);
     downloadBtn.click(function(e){
       pageSizeSelectionWrapper.toggleClass("invisible");
       downloadBtn.toggleClass("hidden");

@@ -20,6 +20,12 @@
       $("#letter-form").click(function(){
         window.location.href = '/pdfs/coverLetters/'+companyName+"/kyle_wang_"+companyName+"_coverLetter_letter.pdf";
       })
+
+      var runningInElectron = window && window.process && window.process.type;
+      if(runningInElectron){
+        $("#download").hide();
+      }
+
       $.ajax({
         url: "./coverLetter.md", 
         type: 'get', 
@@ -27,7 +33,6 @@
         async: true,
         success: function(data) {
           $("#markdown-content").html(marked(data));
-          console.log("here");
           setTimeout(function(){
             document.body.dispatchEvent(new Event('view-ready'));
           },3000);
