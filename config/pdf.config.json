@@ -10,13 +10,13 @@
       "path": "./home/coverLetter/jwt/index.html",
       "name":"kyle_wang_jwt_coverLetter",
       "fileType": "pdf",
-      "targetDir": "pdfs/coverLetter/jwt"
+      "targetDir": "pdfs/coverLetters/jwt"
     },
     {
       "path": "./home/coverLetter/landor/index.html",
-      "name":"kyle_wang_lador_coverLetter",
+      "name":"kyle_wang_landor_coverLetter",
       "fileType": "pdf",
-      "targetDir": "pdfs/coverLetter/landor"
+      "targetDir": "pdfs/coverLetters/landor"
     }
   ]
 }

@@ -7,6 +7,7 @@ var config = require("./config/pdf.config.json");
 var mkdirp = require("mkdirp");
 var pathExists = require("path-exists");
 var path = require("path");
+var forEach = require("foreach");
 
 //helper
 var isValid = function(str){
@@ -45,17 +46,16 @@ function setup(source){
 
   //create job for different pageSizes
   var pageSizes = {
-    "A4": { // A4
+    "a4": { // A4
       height:424285,
       width:300000
     },
-    "Letter": { //Letter
+    "letter": { //Letter
       height:388235,
       width:300000
     }
   }
-  for(sizeName in pageSizes){
-    var pageSize = pageSizes[sizeName];
+  forEach(pageSizes,function(pageSize,sizeName){
     //initialization
     //check if directory exists, if not create it and run job
     var targetDir = path.join(__dirname,source.targetDir);
@@ -64,12 +64,14 @@ function setup(source){
         mkdirp.sync(targetDir)
         console.log("[SETUP] Creating Directory: " + targetDir);
       }
+      console.log(sizeName);
       createJob(pageSize,sizeName,source);
     }).catch(handleError);
-  }
+  });
 }
 
 function createJob(pageSize,sizeName,source){
+  console.log(sizeName);
   var target = path.join(__dirname,source.targetDir,source.name + "_" + sizeName + "." + source.fileType)
   var options = {
     pageSize: pageSize,
