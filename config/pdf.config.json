@@ -1,0 +1,22 @@
+{
+  "sources":[
+    {
+      "path":"./home/resume/index.html",
+      "name":"kyle_wang_resume",
+      "fileType": "pdf",
+      "targetDir": "pdfs/resume"
+    },
+    {
+      "path": "./home/coverLetter/jwt/index.html",
+      "name":"kyle_wang_jwt_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetter/jwt"
+    },
+    {
+      "path": "./home/coverLetter/landor/index.html",
+      "name":"kyle_wang_lador_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetter/landor"
+    }
+  ]
+}

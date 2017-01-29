@@ -5,20 +5,20 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp",
-    "pdfA4": "electron-pdf ./home/resume/index.html ./pdfs/resume/kyle_wang_resume_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
-    "pdfLetter": "electron-pdf ./home/resume/index.html ./pdfs/resume/kyle_wang_resume_letter.pdf -e -p '{\"height\":388235,\"width\":300000}' -b -d true; ",
-    "pdfjwtA4L": "electron-pdf ./home/coverLetter/jwt/index.html ./pdfs/coverLetters/jwt/kyle_wang_jwt_coverLetter_a4.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;",
-    "pdfjwtLetterL": "electron-pdf ./home/coverLetter/jwt/index.html ./pdfs/coverLetters/jwt/kyle_wang_jwt_coverLetter_letter.pdf -e -p '{\"height\":424285,\"width\":300000}' -b -d true;"
+    "renderPDF": "DEBUG=electronpdf:* electron pdf.js"
   },
   "dependencies": {
     "marked": "^0.3.6",
     "page": "^1.7.1"
   },
   "devDependencies": {
+    "electron": "^1.4.15",
     "electron-pdf": "^1.1.1",
     "express": "^4.14.0",
     "gulp": "^3.9.1",
     "gulp-sass": "^3.0.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "mkdirp": "^0.5.1",
+    "path-exists": "^3.0.0"
   }
 }
