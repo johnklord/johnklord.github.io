@@ -35,6 +35,12 @@
       "name":"kyle_wang_grey_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/grey"
+    },
+    {
+      "path": "./home/coverLetter/grey_planner/index.html",
+      "name":"kyle_wang_grey_planner_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/grey_planner"
     }
   ]
 }
