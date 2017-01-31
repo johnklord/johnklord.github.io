@@ -1,13 +1,19 @@
-Dear Hiring Manager,
+Dear Grey Hiring Manager,
 
-I knew I was doing something right after I received my first death threat from a competitor two months into my market expansion campaign for Bambooroof.com, but more on my “side hustle” later.  Having managed accounts worth over $20 million while exceeding all KPI in my previous position, I believe I am an ideal candidate for the Client Associate position in Chicago.  
+<br>
 
-I have a unique set of skills honed through traveling the world and learning from people from all walks of life. I have a growth mindset and am highly adaptable, my unquenchable curiosity drives me to learn and absorb everything around me, on top of that, my jovial personality makes me a pleasure to work with =). Given my background as service manager with AT&T, Co-founder & Partner of a growing business, and my stint in management consulting, I believe I can be of service to you and your team.  
+I had the biggest, stupidest grin on my face as I re-read the text message from the dirty cop who threatened to “F*ck me up”. For this indicated that our marketing strategies had gained enough market shares to scare our competitors. But more on this later. With the systematic takeover of Beijing’ University area’s real estate market as evidence, I believe I am an ideal candidate for the Planner position currently available.  
 
-Even though it might be a bit of a taboo, I’ll still say it: I am a huge fan of the work Landor did for BP. The total rebranding and identity overhaul portrayed BP in an eco-friendly light incomparable to any other competitor in the industry. PR nightmare aside, it is exactly work like this, and the restructuring of Taj brand hotels for Tata, that makes me want to be a part of Landor.  
+I have a unique set of skills honed through traveling the world and learning from people from all walks of life. I have a growth mindset and am highly adaptable and strategic, my unquenchable curiosity drives me to learn and absorb everything around me, on top of that, my jovial personality makes me a pleasure to work with =). Given my background as service manager with AT&T, Co-founder & Partner of a growing business, and my stint in Management Consulting, I believe I can be of service to you and your team.
 
-If given the chance, I would love the opportunity to sit down and meet with you to further discuss my qualifications and, if you’ll indulge me, tell you about my “side hustle”. Attached is my resume, please feel free to contact me via Email or Phone.  I sincerely and in all earnest look forward to hearing from you.  
+Despite being a major powerhouse in traditional advertising and PR, Grey has an agile and adaptive approach to the ever changing landscape of marketing. Creating pop up stores to engage consumers on the ground, Utilizing social media to embrace the idea of “let go to gain control”, and actively shaping global brand perception through online communities. As both a citizen of the world, and a digital native, I am confident in my ability to contribute to any projects Grey plans to take on.   
 
-Best Regards,  
+If given the chance, I would love the opportunity to sit down and meet with you to further discuss my qualifications and, if you’ll indulge me, tell you about my “side hustle”. Attached is my resume, please feel free to contact me via Email or Phone.  I sincerely and in all earnest look forward to hearing from you.
 
-Kyle Wang  
+
+<br>
+
+Best Regards,
+
+Kyle Wang
+
