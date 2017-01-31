@@ -2838,6 +2838,8 @@ a {
             width: 100%; }
   #coverLetter main {
     margin: 1rem; }
+    #coverLetter main a {
+      color: #00008B; }
     @media (min-width: 768px) {
       #coverLetter main {
         padding-top: 19.5rem; } }
@@ -2845,7 +2847,8 @@ a {
       animation-delay: 1.6s;
       -webkit-animation-delay: 1.6s; }
       #coverLetter main article p {
-        padding-bottom: 1rem; }
+        padding-bottom: 1rem;
+        font-size: 1.2rem; }
   @media (min-width: 768px) {
     #coverLetter aside {
       padding-right: 1rem;

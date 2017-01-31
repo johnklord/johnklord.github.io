@@ -17,6 +17,24 @@
       "name":"kyle_wang_landor_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/landor"
+    },
+    {
+      "path": "./home/coverLetter/yr/index.html",
+      "name":"kyle_wang_yr_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/yr"
+    },
+    {
+      "path": "./home/coverLetter/geometry_global/index.html",
+      "name":"kyle_wang_geometry_global_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/geometry_global"
+    },
+    {
+      "path": "./home/coverLetter/grey/index.html",
+      "name":"kyle_wang_grey_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/grey"
     }
   ]
 }
