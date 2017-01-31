@@ -2,7 +2,7 @@ Dear Grey Hiring Manager,
 
 <br>
 
-I had the biggest, stupidest grin on my face as I re-read the text message from the dirty cop who threatened to “F*ck me up”. For this indicated that our marketing strategies had gained enough market shares to scare our competitors. But more on this later. With the systematic takeover of Beijing’ University area’s real estate market as evidence, I believe I am an ideal candidate for the Planner position currently available.  
+I had the biggest, stupidest grin on my face as I re-read the text message from the dirty cop who threatened to “F*ck me up”. For this indicated that our marketing strategies had gained enough market shares to scare our competitors. But more on this later. With Bambooroof.com's systematic takeover of Beijing’ University area’s real estate market as evidence, I believe I am an ideal candidate for the Planner position currently available.  
 
 I am highly strategic and have a unique set of skills honed through traveling the world and learning from people from all walks of life. I have a growth mindset and am highly adaptable, my unquenchable curiosity drives me to learn and absorb everything around me, on top of that, my jovial personality makes me a pleasure to work with =). Given my background as service manager with AT&T, Co-founder & Partner of a growing business, and my stint in Management Consulting, I believe I can be of service to you and your team.
 
