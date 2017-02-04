@@ -5,7 +5,8 @@
   "license": "MIT",
   "scripts": {
     "start": "gulp",
-    "pdf": "DEBUG=electronpdf:* electron pdf.js"
+    "pdfd": "DEBUG=electronpdf:* electron pdf.js",
+    "pdf": "electron pdf.js"
   },
   "dependencies": {
     "marked": "^0.3.6",
