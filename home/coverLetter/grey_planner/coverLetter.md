@@ -2,7 +2,7 @@ Dear Grey Hiring Manager,
 
 <br>
 
-Having managed the expansion strategy of a startup, co-ordinating everything from brand identity to social media strategy, I believe I am an ideal candidate for the Planner position currently available.  
+Having managed the expansion strategy of a startup, co-ordinating everything from brand identity to social media engagement, I believe I am an ideal candidate for the Planner position currently available.  
 
 I am highly strategic and have a unique set of skills honed through learning from people from all walks of life. I have a growth mindset and am highly adaptable, my unquenchable curiosity drives me to learn and absorb everything around me, on top of that, my jovial personality makes me a pleasure to work with =). Given my background as service manager with AT&T, Co-founder & Partner of a growing business, and my stint in Management Consulting, I believe I can be of service to you and your team.
 
