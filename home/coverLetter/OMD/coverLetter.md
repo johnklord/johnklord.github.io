@@ -1,4 +1,4 @@
-Dear hiring manager, 
+Dear OMD Hiring Manager, 
 
 <br>
 
@@ -13,4 +13,5 @@ Confident my transferable skills make me an ideal candidate, please find attache
 <br>
 
 Best Regards,
+
 Kyle Wang 
