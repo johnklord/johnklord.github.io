@@ -1,3 +1,5 @@
+const opn = require("opn");
+
 module.exports = function(){
   var express= require('express');
   var path =require('path');
@@ -11,6 +13,8 @@ module.exports = function(){
   var server = app.listen(port,host,function(){
     console.log('started dev server...');
   })
+
+  opn("http://"+host+":"+port);
 }
 
 
