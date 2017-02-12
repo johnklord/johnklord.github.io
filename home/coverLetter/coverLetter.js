@@ -47,7 +47,7 @@
           $("#markdown-content").html(marked(data));
           setTimeout(function(){
             document.body.dispatchEvent(new Event('view-ready'));
-          },3000);
+          },5000);
         } 
       });
     });
