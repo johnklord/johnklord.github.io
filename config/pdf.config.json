@@ -47,6 +47,12 @@
       "name":"kyle_wang_ghg_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/ghg"
+    },
+    {
+      "path": "./home/coverLetter/omd/index.html",
+      "name":"kyle_wang_omd_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/omd"
     }
   ]
 }
