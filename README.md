@@ -6,7 +6,7 @@ Kyle Wang's Personal Website
 * **Root Project Folder**: `kwang91.github.io` folder or the folder in which it contains `package.json` for your website project 
 * **npm** : Package Manager for Node. Allows developers to manage coding libraries more efficiently. ex: the library used to start a server, the library used to parse markdown files etc...
 * **node** : node is a software that is required to run javascript files in the terminal.
-* **yarn** : Another package manager for node
+* **yarn** : Another package manager for node  
 ##### git
 * **repository** : a git project
 * **commit** : saving your git project locally
