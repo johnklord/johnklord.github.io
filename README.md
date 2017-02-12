@@ -25,10 +25,10 @@ git project on your computer is a different copy on what's on github.com
 
 #### Steps to get your new updated code on the web
 1. Run `git status` to see the current status of your local repository:  
-  2 things to check for:  branch status and commit status: 
-    ##### branch status
-    a. See if it says `"our branch is up-to-date with 'origin/master'."` this means your local repository is in sync with the remote repository    
-    ##### commit status
+  2 things to check for:  branch status and commit status:   
+    ##### branch status  
+    a. See if it says `"our branch is up-to-date with 'origin/master'."` this means your local repository is in sync with the remote repository     
+    ##### commit status  
     a. if it says `"nothing to commit, working directory clean".` then you're good. It means you don't have any newly editted files that you need to commit. You can directly do a `git pull origin master`    
     b. if it says `Changes not staged for commit:` and it lists things in red, you have to commit your changes that you have done with your files before you do a `git pull`.  Run `git add -A` `git commit -am "your message here"`
 
