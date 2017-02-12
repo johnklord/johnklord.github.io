@@ -80,4 +80,44 @@ npm start
 6. `Ctrl+c` to stop the server running on the terminal window
 
 
+## Generating Pdfs
+
+1. open up the pdf config file: `config/pdf.config.json`  
+2. add any new sources that you'd like to generate by following the json pattern:   
+this is a source:    
+```
+    {
+      "path": "./home/coverLetter/[COMPANY FOLDER NAME]/index.html",
+      "name":"kyle_wang_[COMPANY FOLDER NAME]_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/[COMPANY FOLDER NAME]"
+    }
+```  
+replace `[COMPANY FOLDER NAME]` with your any new company cover letters you have written.  
+append this new source with the other sources  
+```javascript
+{
+  "sources":[
+    //... other sources
+    {
+      //...another source
+    },  // <--- Don't Forget This Comma !!!
+    {
+      "path": "./home/coverLetter/companyxyz/index.html",
+      "name":"kyle_wang_companyxyz_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/companyxyz"
+    }
+  ]
+}
+```
+
+3. type `npm run pdf` to generate the pdfs  
+4. commit and push
+```
+git add -A
+git commit -am "updated pdfs"
+git push origin master
+```
+
 
