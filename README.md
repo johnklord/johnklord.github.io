@@ -26,9 +26,9 @@ git project on your computer is a different copy on what's on github.com
 #### Steps to get your new updated code on the web
 1. Run `git status` to see the current status of your local repository:  
   2 things to check for:  branch status and commit status:   
-    ##### branch status  
+    **branch status**  
     a. See if it says `"our branch is up-to-date with 'origin/master'."` this means your local repository is in sync with the remote repository     
-    ##### commit status  
+    **commit status**  
     a. if it says `"nothing to commit, working directory clean".` then you're good. It means you don't have any newly editted files that you need to commit. You can directly do a `git pull origin master`    
     b. if it says `Changes not staged for commit:` and it lists things in red, you have to commit your changes that you have done with your files before you do a `git pull`.  Run `git add -A` `git commit -am "your message here"`
 
@@ -69,7 +69,7 @@ to install dependencies
 npm start
 ```
 
-2. Browser should open automatically with url 127.0.0.1:1337 if not, open up your default browser and manually type in url, either `localhost:1337` or `127.0.0.1:1337`
+2. Browser should open automatically with url [http://127.0.0.1:1337](http://localhost:1337) if not, open up your default browser and manually type in url, either `localhost:1337` or `127.0.0.1:1337`
 
 3. Open up files that you want to edit in sublime text  
 
