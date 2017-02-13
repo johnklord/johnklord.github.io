@@ -1,6 +1,6 @@
-AT&T
-208 S. Akard St.
-Dallas, TX 75202
+AT&T <br>
+208 S. Akard St. <br>
+Dallas, TX 75202 <br>
 
 
 <br>
