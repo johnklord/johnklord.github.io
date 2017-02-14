@@ -1,4 +1,5 @@
 {
+  "delay": 15000,
   "sources":[
     {
       "path":"./home/resume/index.html",

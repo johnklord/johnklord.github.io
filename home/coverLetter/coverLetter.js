@@ -43,8 +43,7 @@
         dataType: 'json',
         async: true,
         success: function(pdfConfig){
-          var pdfSources = pdfConfig.sources.length;
-          console.log(pdfSources);
+          var delay = pdfConfig.delay;
           $.ajax({
             url: "./coverLetter.md", 
             type: 'get', 
@@ -54,7 +53,7 @@
               $("#markdown-content").html(marked(data));
               setTimeout(function(){
                 document.body.dispatchEvent(new Event('view-ready'));
-              },1000*pdfSources);
+              },delay);
             } 
           });
         }
