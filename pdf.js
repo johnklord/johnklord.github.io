@@ -18,6 +18,7 @@ var handleError = function(err){
   process.exit(1);
 }
 //globals
+var queueCounter = 0;
 var jobCounter = 1;
 var renderCounter = 1;
 var jobQueue = {jobs:[]};
@@ -33,57 +34,69 @@ function run(){
   console.log("[SETUP] TOTAL SOURCES: " + config.sources.length);
   console.log("[SETUP] TOTAL PDFS TO RENDER: " + config.sources.length*2);
 
-  config.sources.forEach(setup);
-
-  var jobCounter = 0;
-  function assignJob(){
-  	setTimeout(function(){
-  		var job = jobQueue.jobs[jobCounter++];
-  		if(typeof job !== "undefined" && job){
-  			createJob(job.pageSize,job.sizeName,job.source);
-  			assignJob();
-  		}
-  	},config.delay);
-  } 
-  assignJob();
-}
-
-function setup(source){
-  //Error Checking
-  for(key in source){
-  	var val = source[key];
-  	if(!isValid(val)){
-  		throw new Error(val + " is not a valid path or name")
-  	}
-  }
-
-  //create job for different pageSizes
-  var pageSizes = {
-    "a4": { // A4
-    	height:424285,
-    	width:300000
-    },
-    "letter": { //Letter
-    	height:388235,
-    	width:300000
-    }
-  }
-  forEach(pageSizes,function(pageSize,sizeName){
-    //initialization
-    //check if directory exists, if not create it and run job
-    var targetDir = path.join(__dirname,source.targetDir);
-    pathExists(targetDir).then(function(exists){
-    	if(!exists){
-    		mkdirp.sync(targetDir)
-    		console.log("[SETUP] Creating Directory: " + targetDir);
-    	}
-    	jobQueue.jobs.push({pageSize:pageSize,sizeName:sizeName,source:source});
-    }).catch(handleError);
+  setup(config.sources,function(){
+  	assignJob();
   });
 
 }
 
+function assignJob(){
+	console.log("assign job here");
+	var job = jobQueue.jobs[queueCounter++];
+	try{
+		if(typeof job !== "undefined" && job){
+			createJob(job.pageSize,job.sizeName,job.source);
+		} else {
+			throw new Error("job is undefined");
+		}
+	}
+	catch(err){
+		process.exit(1);
+	}
+} 
+
+function setup(sources,cb){
+	sources.forEach(function(source){
+	  //Error Checking
+	  for(key in source){
+	  	var val = source[key];
+	  	if(!isValid(val)){
+	  		throw new Error(val + " is not a valid path or name")
+	  	}
+	  }
+
+	  //create job for different pageSizes
+	  var pageSizes = {
+	    "a4": { // A4
+	    	height:424285,
+	    	width:300000
+	    },
+	    "letter": { //Letter
+	    	height:388235,
+	    	width:300000
+	    }
+	  }
+	  forEach(pageSizes,function(pageSize,sizeName){
+	    //initialization
+	    //check if directory exists, if not create it and run job
+	    var targetDir = path.join(__dirname,source.targetDir);
+	    pathExists(targetDir).then(function(exists){
+	    	if(!exists){
+	    		mkdirp.sync(targetDir)
+	    		console.log("[SETUP] Creating Directory: " + targetDir);
+	    	}
+	    	jobQueue.jobs.push({pageSize:pageSize,sizeName:sizeName,source:source});
+	    	if(jobQueue.jobs.length >= sources.length*2){
+	    		console.log("[SETUP] SETUP IS FINISHED. READY TO CREATE JOB")
+	    		cb();
+	    	}
+	    }).catch(handleError);
+	  });
+	});
+}
+
 function createJob(pageSize,sizeName,source){
+	console.log("[CREATE] CREATING JOB " + jobCounter);
 	var target = path.join(__dirname,source.targetDir,source.name + "_" + sizeName + "." + source.fileType)
 	var options = {
 		pageSize: pageSize,
@@ -99,9 +112,9 @@ function createJob(pageSize,sizeName,source){
 }
 
 function render(job){
-	console.log("[RENDER] RENDERING JOB " + jobCounter);
 	console.log("         input: " + job.input[0]);
 	console.log("         output: " + job.output);
+	console.log("[RENDER] RENDERING JOB " + jobCounter);
 	jobCounter++;
 	job.on("job-complete",function(r){
 		console.log("[FINISH] JOB " + renderCounter + " DONE. " + r.results);
@@ -112,6 +125,8 @@ function render(job){
 		if(renderCounter-1 === config.sources.length*2){
 			console.log("[FINISH] FINISHED RENDERING ALL PDFS! HOORAY!");
 			process.exit();
+		} else {
+			assignJob();
 		}
 	})
 	job.render();
