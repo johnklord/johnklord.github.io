@@ -37,19 +37,29 @@
       if(runningInElectron){
         $("#download").hide();
       }
-
       $.ajax({
-        url: "./coverLetter.md", 
+        url: "../../../config/pdf.config.json",
         type: 'get', 
-        dataType: 'html',
+        dataType: 'json',
         async: true,
-        success: function(data) {
-          $("#markdown-content").html(marked(data));
-          setTimeout(function(){
-            document.body.dispatchEvent(new Event('view-ready'));
-          },5000);
-        } 
-      });
+        success: function(pdfConfig){
+          var pdfSources = pdfConfig.sources.length;
+          console.log(pdfSources);
+          $.ajax({
+            url: "./coverLetter.md", 
+            type: 'get', 
+            dataType: 'html',
+            async: true,
+            success: function(data) {
+              $("#markdown-content").html(marked(data));
+              setTimeout(function(){
+                document.body.dispatchEvent(new Event('view-ready'));
+              },1000*pdfSources);
+            } 
+          });
+        }
+      })
+
     });
   })
 })();
