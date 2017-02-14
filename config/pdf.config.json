@@ -53,6 +53,12 @@
       "name":"kyle_wang_omd_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/omd"
+    },
+    {
+      "path": "./home/coverLetter/att/index.html",
+      "name":"kyle_wang_att_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/att"
     }
   ]
 }
