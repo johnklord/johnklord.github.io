@@ -2,6 +2,8 @@ AT&T <br>
 208 S. Akard St. <br>
 Dallas, TX 75202 <br>
 
+<br>
+
 Dear Hiring Manager
 
 <br>
@@ -12,9 +14,6 @@ I am ambitious and highly adaptable, equipped with a growth mindset, my curiosit
 When I was last with AT&T, I learned to be highly adaptive to the needs of my clients while maintaining and exceeding internal business goals. I learned about the importance of teamwork, and how my curiosity can translate into personal and professional growth. Additionally, while working at People Momentum Management Consulting, I was taught how to sell ideas to clients in such a way that appeals to them and ultimately results in a long-lasting business relationship. I believe these skills and qualities will be assets to you and your team.
 
 Thank you for taking the time to review my qualifications. Please let me know when would be a good time to further discuss my potential contribution and interest in this position (ask me about my company!). Thank you
-
-Best regards,
-Kyle Wang
 
 
 <br>
