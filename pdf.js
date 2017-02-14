@@ -20,6 +20,7 @@ var handleError = function(err){
 //globals
 var jobCounter = 1;
 var renderCounter = 1;
+var jobQueue = {jobs:[]};
 
 //main
 var exporter = new ElectronPDF()
@@ -32,27 +33,39 @@ function run(){
   console.log("[SETUP] TOTAL SOURCES: " + config.sources.length);
   console.log("[SETUP] TOTAL PDFS TO RENDER: " + config.sources.length*2);
 
-  config.sources.forEach(setup)
+  config.sources.forEach(setup);
+
+  var jobCounter = 0;
+  function assignJob(){
+  	setTimeout(function(){
+  		var job = jobQueue.jobs[jobCounter++];
+  		if(typeof job !== "undefined" && job){
+  			createJob(job.pageSize,job.sizeName,job.source);
+  			assignJob();
+  		}
+  	},config.delay);
+  } 
+  assignJob();
 }
 
 function setup(source){
   //Error Checking
   for(key in source){
-    var val = source[key];
-    if(!isValid(val)){
-      throw new Error(val + " is not a valid path or name")
-    }
+  	var val = source[key];
+  	if(!isValid(val)){
+  		throw new Error(val + " is not a valid path or name")
+  	}
   }
 
   //create job for different pageSizes
   var pageSizes = {
     "a4": { // A4
-      height:424285,
-      width:300000
+    	height:424285,
+    	width:300000
     },
     "letter": { //Letter
-      height:388235,
-      width:300000
+    	height:388235,
+    	width:300000
     }
   }
   forEach(pageSizes,function(pageSize,sizeName){
@@ -60,46 +73,47 @@ function setup(source){
     //check if directory exists, if not create it and run job
     var targetDir = path.join(__dirname,source.targetDir);
     pathExists(targetDir).then(function(exists){
-      if(!exists){
-        mkdirp.sync(targetDir)
-        console.log("[SETUP] Creating Directory: " + targetDir);
-      }
-      console.log(sizeName);
-      createJob(pageSize,sizeName,source);
+    	if(!exists){
+    		mkdirp.sync(targetDir)
+    		console.log("[SETUP] Creating Directory: " + targetDir);
+    	}
+    	jobQueue.jobs.push({pageSize:pageSize,sizeName:sizeName,source:source});
     }).catch(handleError);
   });
+
 }
 
 function createJob(pageSize,sizeName,source){
-  console.log(sizeName);
-  var target = path.join(__dirname,source.targetDir,source.name + "_" + sizeName + "." + source.fileType)
-  var options = {
-    pageSize: pageSize,
-    printBackground: true,
-    disableCache: true,
-    waitForJSEvent: true,
-    marginsType: 1 
-  }
-  var jobOptions = {
-    inMemory: false
-  }
-  exporter.createJob(source.path,target,options,jobOptions).then(render).catch(handleError);
+	var target = path.join(__dirname,source.targetDir,source.name + "_" + sizeName + "." + source.fileType)
+	var options = {
+		pageSize: pageSize,
+		printBackground: true,
+		disableCache: true,
+		waitForJSEvent: true,
+		marginsType: 1 
+	}
+	var jobOptions = {
+		inMemory: false
+	}
+	exporter.createJob(source.path,target,options,jobOptions).then(render).catch(handleError);
 }
 
 function render(job){
-  console.log("[RENDER] RENDERING JOB " + jobCounter);
-  jobCounter++;
-  job.on("job-complete",function(r){
-    console.log("[RENDER] JOB " + renderCounter + " DONE. " + r.results);
-    if(r.error){
-      console.error(r.error);
-    }
-    renderCounter++;
-    if(renderCounter-1 === config.sources.length*2){
-      console.log("[FINISH] FINISHED RENDERING ALL PDFS! HOORAY!");
-      process.exit();
-    }
-  })
-  job.render();
+	console.log("[RENDER] RENDERING JOB " + jobCounter);
+	console.log("         input: " + job.input[0]);
+	console.log("         output: " + job.output);
+	jobCounter++;
+	job.on("job-complete",function(r){
+		console.log("[FINISH] JOB " + renderCounter + " DONE. " + r.results);
+		if(r.error){
+			console.error(r.error);
+		}
+		renderCounter++;
+		if(renderCounter-1 === config.sources.length*2){
+			console.log("[FINISH] FINISHED RENDERING ALL PDFS! HOORAY!");
+			process.exit();
+		}
+	})
+	job.render();
 }
 
