@@ -38,27 +38,17 @@
         $("#download").hide();
       }
       $.ajax({
-        url: "../../../config/pdf.config.json",
+        url: "./coverLetter.md", 
         type: 'get', 
-        dataType: 'json',
+        dataType: 'html',
         async: true,
-        success: function(pdfConfig){
-          var delay = pdfConfig.delay;
-          $.ajax({
-            url: "./coverLetter.md", 
-            type: 'get', 
-            dataType: 'html',
-            async: true,
-            success: function(data) {
-              $("#markdown-content").html(marked(data));
-              setTimeout(function(){
-                document.body.dispatchEvent(new Event('view-ready'));
-              },delay);
-            } 
-          });
-        }
-      })
-
+        success: function(data) {
+          $("#markdown-content").html(marked(data));
+          setTimeout(function(){
+            document.body.dispatchEvent(new Event('view-ready'));
+          },5000);
+        } 
+      });
     });
   })
 })();
