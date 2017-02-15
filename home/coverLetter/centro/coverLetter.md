@@ -14,7 +14,7 @@ During my time at AT&T, I learned to be highly adaptive to the needs of my clien
 
 Having helped launched a startup myself, I personally experienced just how messy tracking digital media can be, all the channels, sites, accounts, messages, responses… Centro’s platform really consolidates and streamlines the entire experience, I feel that any enterprise, regardless of size, can incorporate Centro into their operation. I want to help make that happen.  
 
-Thank you for taking the time to review my qualifications. I would love to sit down and meet with you to further discuss my potential contribution and interest in this position (ask me about my startup!). Thank you
+Thank you for taking the time to review my qualiﬁcations. Please let me know when would be a good time to further discuss my potential contribution and interest in this position (ask me about my startup!). Thank you
 
 
 <br>
