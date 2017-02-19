@@ -59,6 +59,12 @@
       "name":"kyle_wang_att_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/att"
+    },
+    {
+      "path": "./home/coverLetter/maxus/index.html",
+      "name":"kyle_wang_maxus_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/maxus"
     }
   ]
 }
