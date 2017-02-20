@@ -1,20 +1,18 @@
-AT&T <br>
-208 S. Akard St. <br>
-Dallas, TX 75202 <br>
+Nestle<br>
+800 North Brand Blvd. <br>
+Glendale, CA 91203 <br>
 
 <br>
 
 Dear Hiring Manager
 
-<br>
-Having been trained by one of the top companies in the world (AT&T), I set out to create my own startup. Having accomplished that now, I look to return home. With a passion for media marketing, and experience from both large and small enterprise, I am confident I am a great candidate for the Advertising Sales Coordinator position. 
+After a successful year with AT&T where i managed client relations and coordinated cross departmental functions, I left for China to establish my own startup. There, I leveraged the business development skills i gained interning at People Momentum Management Consulting to create a real estate agency catering to foreign students. With these accomplishments in mind, i believe i am a ideal candidate for the Nestle Sales Development Program.
 
-I am ambitious and highly adaptable, equipped with a growth mindset, my curiosity drives me to learn and absorb everything around me.    
+During my time at AT&T, I learned to be highly adaptive to the needs of my clients while maintaining and exceeding internal business goals. I learned about the importance of teamwork, and how my curiosity can translate into personal and professional growth. Additionally, at People Momentum Management Consulting, I was also taught how to sell ideas to clients in such a way that appeals to them and ultimately results in a long-lasting business relationship.
 
-When I was last with AT&T, I learned to be highly adaptive to the needs of my clients while maintaining and exceeding internal business goals. I learned about the importance of teamwork, and how my curiosity can translate into personal and professional growth. Additionally, while working at People Momentum Management Consulting, I was taught how to sell ideas to clients in such a way that appeals to them and ultimately results in a long-lasting business relationship. I believe these skills and qualities will be assets to you and your team.
+I see the chance to work for Nestle as an unparalleled opportunity, Nestle has been a part of my life every step of the way. As a young expat growing up overseas, before i knew what a logo was, whenever I saw a product with the the picture a family of birds in a nest, I knew that the product was safe, and delicious. Overtime, I began to view the logo as a stamp of quality and trust. It is my wish to help more people see the Nestle logo the way I see it.   
 
-Thank you for taking the time to review my qualifications. Please let me know when would be a good time to further discuss my potential contribution and interest in this position (ask me about my company!). Thank you
-
+Thank you for taking the time to review my qualifications. I would love to meet with you to further discuss my interest and potential contribution in this position. You can reach me via email or phone (ask me about my startup!) Thank you.
 
 <br>
 Best regards,
