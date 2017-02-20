@@ -65,6 +65,12 @@
       "name":"kyle_wang_maxus_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/maxus"
+    },
+    {
+      "path": "./home/coverLetter/nestle/index.html",
+      "name":"kyle_wang_nestle_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/nestle"
     }
   ]
 }
