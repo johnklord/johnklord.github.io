@@ -71,6 +71,12 @@
       "name":"kyle_wang_nestle_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/nestle"
+    },
+    {
+      "path": "./home/coverLetter/pg/index.html",
+      "name":"kyle_wang_pg_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/pg"
     }
   ]
 }
