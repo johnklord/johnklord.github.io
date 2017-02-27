@@ -77,6 +77,12 @@
       "name":"kyle_wang_pg_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/pg"
+    },
+    {
+      "path": "./home/coverLetter/pg_sales/index.html",
+      "name":"kyle_wang_pg_sales_coverLetter",
+      "fileType": "pdf",
+      "targetDir": "pdfs/coverLetters/pg_sales"
     }
   ]
 }
