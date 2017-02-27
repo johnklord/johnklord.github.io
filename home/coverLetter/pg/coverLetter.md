@@ -1,20 +1,21 @@
-Centro<br>
-841 Broadway<br>
-Suite 600<br>
-New York, NY 10003 <br>
+The Procter & Gamble Company<br>
+1 P&G Plaza<br>
+Cincinnati, OH 45202 <br>
 
 <br>
 
-Dear Hiring Manager
+Dear P&G
 
 <br>
-Having worked at a large corporation like AT&T, I know first-hand how a business views and prioritizes the branding and marketing of their products. I believe my skills and insights gained from working on the client-side will enable me to make a successful transition into my true passion: media strategy. I am confident I am a great candidate for the Media Associate position.
+Please note: Despite this being an exciting true story fraught with danger and romance, it is also an attempt to obtain an interview for the Consumer & Market Knowledge - Associate Manager position at P&G.       
 
-During my time at AT&T, I learned to be highly adaptive to the needs of my clients while maintaining internal business goals. I learned about the importance of teamwork, and how my curiosity can translate into personal and professional growth. Additionally, at People Momentum Management Consulting, I was taught how to sell ideas to clients in such a way that appeals to them and ultimately results in a long-lasting business relationship. I believe these skills and qualities are important to any job, particularly in the field of marketing strategy. 
+After a successful year with AT&T where I learned to be highly adaptive to the needs of my clients while maintaining and exceeding internal business goals, I left for China to establish my own startup. There, I leveraged my business development skills I gained interning at People Momentum Management Consulting and my curiosity/desire to understanding how people think (always ask why), to create a real estate agency; specifically, for foreign students. 
 
-Having helped launched a startup myself, I personally experienced just how messy tracking digital media can be, all the channels, sites, accounts, messages, responses… Centro’s platform really consolidates and streamlines the entire experience, I feel that any enterprise, regardless of size, can incorporate Centro into their operation. I want to help make that happen.  
+Through analyzing the data gained by enlisting one of the local agents and creating psychographic identifiers, my partner and I were able to I.D. an entry point to the market. From there, we manage to isolate and secure (exclusive) demand channels, expand our supply network, and ultimately, corner a piece of the market. It is through these experience, I seek to transition into my true passion, consumer marketing. 
 
-Thank you for taking the time to review my qualiﬁcations. Please let me know when would be a good time to further discuss my potential contribution and interest in this position (ask me about my startup!). Thank you
+I see the chance to work for P&G as an unparalleled opportunity, P&G has been a part of my life every step of the way, as a young expat growing up overseas, before I knew what a logo was, whenever I saw a product with with the letters “P&G” on the back, I knew it was good. I began to view the letters as a stamp of quality and trust. It is my wish to help more people see the letters P&G the way I see it.
+
+I would love to meet with you to further discuss my interest and potential contribution in this position. And If you’d like, tell you about the danger and romance part of my business adventures. Give me a call! Thank you.
 
 
 <br>
