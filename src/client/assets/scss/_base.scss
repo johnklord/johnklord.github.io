@@ -9,13 +9,13 @@ html{
     font-size: 14px;
   }
   @include media(pad){
-    font-size: 16px;
+    font-size: 15.5px;
   }
   @include media(lg-pad){
-    font-size: 16px;
+    font-size: 15.5px;
   }
   @include media(desktop){
-    font-size: 16px;
+    font-size: 15.5px;
   }
   min-width: 320px;
   body{

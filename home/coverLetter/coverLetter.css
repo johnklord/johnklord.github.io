@@ -2697,13 +2697,13 @@ html {
       font-size: 14px; } }
   @media (min-width: 768px) {
     html {
-      font-size: 16px; } }
+      font-size: 15.5px; } }
   @media (min-width: 1024px) {
     html {
-      font-size: 16px; } }
+      font-size: 15.5px; } }
   @media (min-width: 1280px) {
     html {
-      font-size: 16px; } }
+      font-size: 15.5px; } }
   html body {
     margin: 0;
     padding: 0;
@@ -2853,8 +2853,8 @@ a {
     #coverLetter aside {
       padding-right: 1rem;
       padding-left: 0;
-      min-width: 277px;
-      max-width: 277px;
+      min-width: 285px;
+      max-width: 285px;
       float: left; }
       #coverLetter aside #about * {
         text-align: right; }
@@ -2868,4 +2868,4 @@ a {
     #coverLetter main {
       float: left;
       padding-left: 1rem;
-      width: calc( 100% - 277px - 6rem); } }
+      width: calc( 100% - 285px - 6rem); } }
