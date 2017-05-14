@@ -1,9 +1,9 @@
-Kyle Wang's Personal Website
+Shuli Huang's Personal Website
 ============================
 
 # Jargon
 ##### general
-* **Root Project Folder**: `kwang91.github.io` folder or the folder in which it contains `package.json` for your website project 
+* **Root Project Folder**: `johnklord.github.io` folder or the folder in which it contains `package.json` for your website project 
 * **npm** : Package Manager for Node. Allows developers to manage coding libraries more efficiently. ex: the library used to start a server, the library used to parse markdown files etc...
 * **node** : node is a software that is required to run javascript files in the terminal.
 * **yarn** : Another package manager for node    
@@ -19,7 +19,7 @@ Kyle Wang's Personal Website
 #### local vs remote
 git project on your computer is a different copy on what's on github.com
 * **local** : git repository that you cloned onto your computer 
-* **remote** :  git repository that's sitting online on github.com/kwang91.github.com
+* **remote** :  git repository that's sitting online on github.com/johnklord.github.com
 
 ## Using Git
 
@@ -88,7 +88,7 @@ this is a source:
 ```
     {
       "path": "./home/coverLetter/[COMPANY FOLDER NAME]/index.html",
-      "name":"kyle_wang_[COMPANY FOLDER NAME]_coverLetter",
+      "name":"shuli_huang_[COMPANY FOLDER NAME]_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/[COMPANY FOLDER NAME]"
     }
@@ -104,7 +104,7 @@ append this new source with the other sources
     },  // <--- Don't Forget This Comma !!!
     {
       "path": "./home/coverLetter/companyxyz/index.html",
-      "name":"kyle_wang_companyxyz_coverLetter",
+      "name":"shuli_huang_companyxyz_coverLetter",
       "fileType": "pdf",
       "targetDir": "pdfs/coverLetters/companyxyz"
     }
