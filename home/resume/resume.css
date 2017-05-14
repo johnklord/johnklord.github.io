@@ -5,21 +5,21 @@
  *
  * Copyright (c) 2016 Daniel Eden
  */
-.animated, #resume aside #name, #resume aside #line, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #experience, #resume main #education, #resume main #interests {
+.animated, #resume aside #name, #resume aside #line, #resume aside #contact, #resume aside #about, #resume aside #skills, #resume aside #language, #resume aside #download, #resume main #education, #resume main #work-experience, #resume main #research-experience, #resume main #projects, #resume main #activities {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both; }
 
-.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#contact, #resume aside .infinite#about, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#experience, #resume main .infinite#education, #resume main .infinite#interests {
+.animated.infinite, #resume aside .infinite#name, #resume aside .infinite#line, #resume aside .infinite#contact, #resume aside .infinite#about, #resume aside .infinite#skills, #resume aside .infinite#language, #resume aside .infinite#download, #resume main .infinite#education, #resume main .infinite#work-experience, #resume main .infinite#research-experience, #resume main .infinite#projects, #resume main .infinite#activities {
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite; }
 
-.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#contact, #resume aside .hinge#about, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#experience, #resume main .hinge#education, #resume main .hinge#interests {
+.animated.hinge, #resume aside .hinge#name, #resume aside .hinge#line, #resume aside .hinge#contact, #resume aside .hinge#about, #resume aside .hinge#skills, #resume aside .hinge#language, #resume aside .hinge#download, #resume main .hinge#education, #resume main .hinge#work-experience, #resume main .hinge#research-experience, #resume main .hinge#projects, #resume main .hinge#activities {
   -webkit-animation-duration: 2s;
   animation-duration: 2s; }
 
-.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#contact, #resume aside .flipOutX#about, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#experience, #resume main .flipOutX#education, #resume main .flipOutX#interests,
+.animated.flipOutX, #resume aside .flipOutX#name, #resume aside .flipOutX#line, #resume aside .flipOutX#contact, #resume aside .flipOutX#about, #resume aside .flipOutX#skills, #resume aside .flipOutX#language, #resume aside .flipOutX#download, #resume main .flipOutX#education, #resume main .flipOutX#work-experience, #resume main .flipOutX#research-experience, #resume main .flipOutX#projects, #resume main .flipOutX#activities,
 .animated.flipOutY,
 #resume aside .flipOutY#name,
 #resume aside .flipOutY#line,
@@ -28,9 +28,11 @@
 #resume aside .flipOutY#skills,
 #resume aside .flipOutY#language,
 #resume aside .flipOutY#download,
-#resume main .flipOutY#experience,
 #resume main .flipOutY#education,
-#resume main .flipOutY#interests,
+#resume main .flipOutY#work-experience,
+#resume main .flipOutY#research-experience,
+#resume main .flipOutY#projects,
+#resume main .flipOutY#activities,
 .animated.bounceIn,
 #resume aside .bounceIn#name,
 #resume aside .bounceIn#line,
@@ -39,9 +41,11 @@
 #resume aside .bounceIn#skills,
 #resume aside .bounceIn#language,
 #resume aside .bounceIn#download,
-#resume main .bounceIn#experience,
 #resume main .bounceIn#education,
-#resume main .bounceIn#interests,
+#resume main .bounceIn#work-experience,
+#resume main .bounceIn#research-experience,
+#resume main .bounceIn#projects,
+#resume main .bounceIn#activities,
 .animated.bounceOut,
 #resume aside .bounceOut#name,
 #resume aside .bounceOut#line,
@@ -50,9 +54,11 @@
 #resume aside .bounceOut#skills,
 #resume aside .bounceOut#language,
 #resume aside .bounceOut#download,
-#resume main .bounceOut#experience,
 #resume main .bounceOut#education,
-#resume main .bounceOut#interests {
+#resume main .bounceOut#work-experience,
+#resume main .bounceOut#research-experience,
+#resume main .bounceOut#projects,
+#resume main .bounceOut#activities {
   -webkit-animation-duration: .75s;
   animation-duration: .75s; }
 
@@ -1020,7 +1026,7 @@
     -webkit-transform: none;
     transform: none; } }
 
-.fadeInUp, #resume main #experience, #resume main #education, #resume main #interests {
+.fadeInUp, #resume main #education, #resume main #work-experience, #resume main #research-experience, #resume main #projects, #resume main #activities {
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp; }
 
@@ -1278,7 +1284,7 @@
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in; } }
 
-.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#contact, #resume aside .flip#about, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#experience, #resume main .flip#education, #resume main .flip#interests {
+.animated.flip, #resume aside .flip#name, #resume aside .flip#line, #resume aside .flip#contact, #resume aside .flip#about, #resume aside .flip#skills, #resume aside .flip#language, #resume aside .flip#download, #resume main .flip#education, #resume main .flip#work-experience, #resume main .flip#research-experience, #resume main .flip#projects, #resume main .flip#activities {
   -webkit-backface-visibility: visible;
   backface-visibility: visible;
   -webkit-animation-name: flip;
@@ -2407,6 +2413,90 @@
   animation-name: expand; }
 
 @font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.svg");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.eot");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.svg");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.eot");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.woff");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.svg");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.eot");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.eot");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
   font-family: Tex Gyre Adventor;
   src: url("../font/texgyreadventor/texgyreadventor-regular.otf");
   font-weight: 400; }
@@ -2700,7 +2790,7 @@
   color: #B02C29; }
 
 html {
-  font-family: Railway,Open Sans,Sans-Serif;
+  font-family: Open Sans,Sans-serif;
   font-weight: 300;
   font-size: 10px;
   min-width: 320px; }
@@ -2722,7 +2812,7 @@ html {
   html body {
     margin: 0;
     padding: 0;
-    background-color: #F2EBD9;
+    background-color: white;
     color: #0D0C2A; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2738,7 +2828,7 @@ header, .section-header {
   text-transform: uppercase;
   font-weight: bold; }
   header.dark, .dark.section-header {
-    color: #F2EBD9;
+    color: white;
     background: #0D0C2A;
     margin-right: -1rem; }
 
@@ -2810,7 +2900,7 @@ a {
   text-align: center;
   padding: 0.3rem; }
   .btn:hover, button:hover {
-    color: #F2EBD9;
+    color: white;
     background: #0D0C2A; }
 
 #resume {
@@ -2865,29 +2955,54 @@ a {
     @media (min-width: 768px) {
       #resume main {
         padding-top: 9.5rem; } }
-    #resume main #experience {
+    #resume main #education {
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s; }
-      #resume main #experience table.experience-header .workplace {
-        text-transform: uppercase; }
-      #resume main #experience table.experience-header .date {
-        width: 50%;
-        text-align: right; }
-      #resume main #experience table.experience-header .position {
-        font-style: italic; }
-    #resume main #education {
-      animation-delay: 1.6s;
-      -webkit-animation-delay: 1.6s; }
       #resume main #education table.education-header .school {
         text-transform: uppercase; }
       #resume main #education table.education-header .date {
-        width: 50%;
+        width: 10rem;
         text-align: right; }
+      #resume main #education table.education-header .gpa {
+        width: 8rem; }
       #resume main #education table.education-header .advisor {
         text-align: right; }
-    #resume main #interests {
+    #resume main #work-experience {
+      animation-delay: 1.6s;
+      -webkit-animation-delay: 1.6s; }
+      #resume main #work-experience table.experience-header .workplace {
+        text-transform: uppercase; }
+      #resume main #work-experience table.experience-header .date {
+        width: 10rem;
+        text-align: right; }
+      #resume main #work-experience table.experience-header .position {
+        font-style: italic; }
+    #resume main #research-experience {
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s; }
+      #resume main #research-experience table.experience-header .workplace {
+        text-transform: uppercase; }
+      #resume main #research-experience table.experience-header .date {
+        width: 10rem;
+        text-align: right; }
+      #resume main #research-experience table.experience-header .position {
+        font-style: italic; }
+    #resume main #projects {
+      animation-delay: 2.0s;
+      -webkit-animation-delay: 2.0s; }
+      #resume main #projects table.experience-header .project {
+        text-transform: uppercase; }
+      #resume main #projects table.experience-header .date {
+        width: 10rem;
+        text-align: right; }
+    #resume main #activities {
+      animation-delay: 2.2s;
+      -webkit-animation-delay: 2.2s; }
+      #resume main #activities table.experience-header .title {
+        text-transform: uppercase; }
+      #resume main #activities table.experience-header .date {
+        width: 10rem;
+        text-align: right; }
   @media (min-width: 768px) {
     #resume aside {
       padding-right: 1rem;

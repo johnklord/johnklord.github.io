@@ -1,3 +1,8 @@
+$avenir-next-thin:"./font/avenir/avenir-next-thin";
+$avenir-next-regular:"./font/avenir/avenir-next-regular";
+$avenir-next-italic:"./font/avenir/avenir-next-italic";
+$avenir-next-bold:"./font/avenir/avenir-next-bold";
+
 $opensans-light:"./font/opensans/opensans-light-webfont";
 $opensans-light_italic:"./font/opensans/opensans-lightitalic-webfont";
 $opensans-regular: "./font/opensans/opensans-regular-webfont";
@@ -32,6 +37,7 @@ $texgyreadventor-bold:"./font/texgyreadventor/texgyreadventor-bold";
 $texgyreadventor-bold_italic:"./font/texgyreadventor/texgyreadventor-bolditalic";
 $equalsans-regular:"./font/EqualSans";
 
+
 @import "font";
 @import "variables";
 @import "mixins";
@@ -42,7 +48,7 @@ $equalsans-regular:"./font/EqualSans";
 html {
   body{
     min-width: 320px;
-    background-color: $light-brown;
+    background-color: $secondary-color;
   }
 }
 

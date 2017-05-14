@@ -85,17 +85,40 @@
       padding-top: $main-head-spacing;
     }
     margin: $document-margin;
-    #experience{
+    #education{
       @extend .animated;
       @extend .fadeInUp;
       animation-delay: 1.4s;
       -webkit-animation-delay: 1.4s;
+      table.education-header{
+        .school{
+          text-transform: uppercase;
+        }
+        .date{
+          width: 10rem;
+          text-align: right;
+        }
+        .major{
+        }
+        .gpa{
+          width: 8rem;
+        }
+        .advisor{
+          text-align: right;
+        }
+      }
+    }
+    #work-experience{
+      @extend .animated;
+      @extend .fadeInUp;
+      animation-delay: 1.6s;
+      -webkit-animation-delay: 1.6s;
       table.experience-header{
         .workplace{
           text-transform: uppercase;
         }
         .date{
-          width: 50%;
+          width: 10rem;
           text-align: right;
         }
         .position{
@@ -103,36 +126,52 @@
         }
       }
     }
-    #education{
-      @extend .animated;
-      @extend .fadeInUp;
-      animation-delay: 1.6s;
-      -webkit-animation-delay: 1.6s;
-      table.education-header{
-        .school{
-          text-transform: uppercase;
-        }
-        .date{
-          width: 50%;
-          text-align: right;
-        }
-        .major{
-        }
-        .advisor{
-          text-align: right;
-        }
-      }
-    }
-    #interests{
+    #research-experience{
       @extend .animated;
       @extend .fadeInUp;
       animation-delay: 1.8s;
       -webkit-animation-delay: 1.8s;
-      #interest-list{
-        //li{
-          //padding-right: 1.5rem;
-          //float: left;
-        //}
+      table.experience-header{
+        .workplace{
+          text-transform: uppercase;
+        }
+        .date{
+          width: 10rem;
+          text-align: right;
+        }
+        .position{
+          font-style: italic;
+        }
+      }
+    }
+    #projects{
+      @extend .animated;
+      @extend .fadeInUp;
+      animation-delay: 2.0s;
+      -webkit-animation-delay: 2.0s;
+      table.experience-header{
+        .project{
+          text-transform: uppercase;
+        }
+        .date{
+          width: 10rem;
+          text-align: right;
+        }
+      }
+    }
+    #activities{
+      @extend .animated;
+      @extend .fadeInUp;
+      animation-delay: 2.2s;
+      -webkit-animation-delay: 2.2s;
+      table.experience-header{
+        .title{
+          text-transform: uppercase;
+        }
+        .date{
+          width: 10rem;
+          text-align: right;
+        }
       }
     }
   }

@@ -2,87 +2,9 @@
   "sources":[
     {
       "path":"./home/resume/index.html",
-      "name":"kyle_wang_resume",
+      "name":"shuli_huang_resume",
       "fileType": "pdf",
       "targetDir": "pdfs/resume"
-    },
-    {
-      "path": "./home/coverLetter/jwt/index.html",
-      "name":"kyle_wang_jwt_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/jwt"
-    },
-    {
-      "path": "./home/coverLetter/landor/index.html",
-      "name":"kyle_wang_landor_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/landor"
-    },
-    {
-      "path": "./home/coverLetter/yr/index.html",
-      "name":"kyle_wang_yr_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/yr"
-    },
-    {
-      "path": "./home/coverLetter/geometry_global/index.html",
-      "name":"kyle_wang_geometry_global_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/geometry_global"
-    },
-    {
-      "path": "./home/coverLetter/grey/index.html",
-      "name":"kyle_wang_grey_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/grey"
-    },
-    {
-      "path": "./home/coverLetter/grey_planner/index.html",
-      "name":"kyle_wang_grey_planner_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/grey_planner"
-    },
-    {
-      "path": "./home/coverLetter/ghg/index.html",
-      "name":"kyle_wang_ghg_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/ghg"
-    },
-    {
-      "path": "./home/coverLetter/omd/index.html",
-      "name":"kyle_wang_omd_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/omd"
-    },
-    {
-      "path": "./home/coverLetter/att/index.html",
-      "name":"kyle_wang_att_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/att"
-    },
-    {
-      "path": "./home/coverLetter/maxus/index.html",
-      "name":"kyle_wang_maxus_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/maxus"
-    },
-    {
-      "path": "./home/coverLetter/nestle/index.html",
-      "name":"kyle_wang_nestle_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/nestle"
-    },
-    {
-      "path": "./home/coverLetter/pg/index.html",
-      "name":"kyle_wang_pg_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/pg"
-    },
-    {
-      "path": "./home/coverLetter/pg_sales/index.html",
-      "name":"kyle_wang_pg_sales_coverLetter",
-      "fileType": "pdf",
-      "targetDir": "pdfs/coverLetters/pg_sales"
     }
   ]
 }

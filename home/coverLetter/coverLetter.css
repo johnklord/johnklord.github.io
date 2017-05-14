@@ -2392,6 +2392,90 @@
   animation-name: expand; }
 
 @font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.woff");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.svg");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-thin.eot");
+  font-weight: 300; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.woff");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.svg");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-regular.eot");
+  font-weight: 400; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.ttf");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.woff");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.svg");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-bold.eot");
+  font-weight: 500; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.ttf");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.woff");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.svg");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
+  font-family: Avenir Next;
+  src: url("../font/avenir/avenir-next-italic.eot");
+  font-weight: 400;
+  font-style: italic; }
+
+@font-face {
   font-family: Tex Gyre Adventor;
   src: url("../font/texgyreadventor/texgyreadventor-regular.otf");
   font-weight: 400; }
@@ -2685,7 +2769,7 @@
   color: #B02C29; }
 
 html {
-  font-family: Railway,Open Sans,Sans-Serif;
+  font-family: Open Sans,Sans-serif;
   font-weight: 300;
   font-size: 10px;
   min-width: 320px; }
@@ -2707,7 +2791,7 @@ html {
   html body {
     margin: 0;
     padding: 0;
-    background-color: #F2EBD9;
+    background-color: white;
     color: #0D0C2A; }
 
 h1, h2, h3, h4, h5, h6 {
@@ -2723,7 +2807,7 @@ header, .section-header {
   text-transform: uppercase;
   font-weight: bold; }
   header.dark, .dark.section-header {
-    color: #F2EBD9;
+    color: white;
     background: #0D0C2A;
     margin-right: -1rem; }
 
@@ -2795,7 +2879,7 @@ a {
   text-align: center;
   padding: 0.3rem; }
   .btn:hover, button:hover {
-    color: #F2EBD9;
+    color: white;
     background: #0D0C2A; }
 
 #coverLetter {

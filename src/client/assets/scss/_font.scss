@@ -1,3 +1,8 @@
+$avenir-next-thin:"../font/avenir/avenir-next-thin" !default;
+$avenir-next-regular:"../font/avenir/avenir-next-regular" !default;
+$avenir-next-italic:"../font/avenir/avenir-next-italic" !default;
+$avenir-next-bold:"../font/avenir/avenir-next-bold" !default;
+
 $opensans-light:"../font/opensans/opensans-light-webfont" !default;
 $opensans-light_italic:"../font/opensans/opensans-lightitalic-webfont" !default;
 $opensans-regular: "../font/opensans/opensans-regular-webfont" !default;
@@ -31,6 +36,94 @@ $texgyreadventor-regular_italic:"../font/texgyreadventor/texgyreadventor-italic"
 $texgyreadventor-bold:"../font/texgyreadventor/texgyreadventor-bold" !default;
 $texgyreadventor-bold_italic:"../font/texgyreadventor/texgyreadventor-bolditalic" !default;
 $equalsans-regular:"../font/EqualSans" !default;
+
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-thin}.ttf");
+  font-weight: 300;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-thin}.woff");
+  font-weight: 300;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-thin}.svg");
+  font-weight: 300;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-thin}.eot");
+  font-weight: 300;
+}
+
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-regular}.ttf");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-regular}.woff");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-regular}.svg");
+  font-weight: 400;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-regular}.eot");
+  font-weight: 400;
+}
+
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-bold}.ttf");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-bold}.woff");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-bold}.svg");
+  font-weight: 500;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-bold}.eot");
+  font-weight: 500;
+}
+
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-italic}.ttf");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-italic}.woff");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-italic}.svg");
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face{
+  font-family: Avenir Next;
+  src: url("#{$avenir-next-italic}.eot");
+  font-weight: 400;
+  font-style: italic;
+}
 
 @font-face{
   font-family: Tex Gyre Adventor;
